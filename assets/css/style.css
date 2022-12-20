@@ -10,7 +10,7 @@ GENERAL
 * {
   margin: 0;
   padding: 0;
-  border: 0;
+  box-sizing: border-box;
 }
   
 html {
@@ -23,8 +23,9 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
+  overflow: hidden;
   min-height: 100%;
-  background-color: #101010;
+  background-color: #348ed8;
   color: #fff;
 }
 
@@ -40,6 +41,42 @@ USER INPUT
   background-color: #400080;
   border-color: #8000ff;
 }
+
+/* ==========
+8 Ball
+========== */
+.ball-black {
+  width: 400px;
+  height: 400px;
+  background-color: #000;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+}
+
+.ball-white {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#answer {
+  width: 90px;
+  color: #000;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 120px;
+  margin: 0;
+}
+
+
 
 /* ==========
 NAVBAR
