@@ -18,6 +18,12 @@ html {
 }
   
 body {
+  background: url("../images/8-ball-background.webp") no-repeat bottom center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
   font-family: 'Nunito', sans-serif;
   display: flex;
   flex-direction: column;
@@ -25,15 +31,47 @@ body {
   text-align: center;
   overflow: hidden;
   min-height: 100%;
-  background-color: #348ed8;
   color: #fff;
+}
+
+/* ==========
+NAVBAR
+========== */
+.navbar {
+  width: 100%;
+  text-align: end;
+  background-color: #181818;
+}
+
+.navbar-brand {
+  font-family: 'Orbitron', sans-serif;
+  color: #A9A9A9;
+}
+
+/* ==========
+HEADER
+========== */
+
+.heading h1 {
+  font-style: italic;
+  font-size: 60px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.heading p {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 8px;
 }
 
 /* ==========
 USER INPUT
 ========== */
 .btn {
-  background-color: #8000ff;
+  color: #fff;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.5);
   border-color: #8000ff;
 }
 
@@ -74,22 +112,6 @@ USER INPUT
   font-weight: 800;
   font-size: 120px;
   margin: 0;
-}
-
-
-
-/* ==========
-NAVBAR
-========== */
-.navbar {
-  width: 100%;
-  text-align: end;
-  background-color: #181818;
-}
-
-.navbar-brand {
-  font-family: 'Orbitron', sans-serif;
-  color: #A9A9A9;
 }
 
 /* ==========
