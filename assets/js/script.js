@@ -8,29 +8,34 @@
 // Selectors for elements on the page to interact with
 let button = document.querySelector('#shakeButton');
 let answer = document.querySelector('#answer');
+let options = [
+  'It is certain.',
+  'As I see it, yes.',
+  'Do not count on it.',
+  'Reply hazy, try again.'
+]
 
 // Generate a random number
-function generateRandom(maxNumber) {
-  return Math.floor(Math.random() * maxNumber);
-  console.log(randomNumber);
-}
-
-// Call a random number
-let randomNumber = generateRandom(3);
-alert(randomNumber);
+function generateAnswer() {
+  let index = Math.floor(Math.random() * 4);
+  let message = options[index];
+  answer.textContent = message;
+  answer.style.fontSize = '18px';
+};
 
 //Event listener for button click
-button.addEventListener('click', submitQuestion);
+button.addEventListener('click', generateAnswer);
 
-//Clicking shake button provides answer
+/* Clicking shake button provides answer
 function submitQuestion() {
   document.getElementById('answer').innerHTML = 'test'
 }
+*/
 
 //Random answers
-// 0 -> It is certain.
-// 1 -> As I see it, yes.
-// 2 -> Reply hazy, try again.
-// 3 -> Don't count on it.
+// 0 -> I.
+// 1 -> 
+// 2 -> 
+// 3 -> 
 
 // Display the answer in place of 8 ball
