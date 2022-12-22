@@ -6,11 +6,12 @@
 **/
 
 // Selectors for elements on the page to interact with
-let question = document.querySelector('#userQuestion');
+let question = document.querySelector('.user-question');
 let button = document.querySelector('#shakeButton');
 let answer = document.querySelector('#answer');
+let errorMessage = document.querySelector('.error-message-text');
 
-let options = [
+let answersArray = [
   'It is certain.',
   'It is decidedly so.',
   'Without a doubt.',
@@ -33,29 +34,40 @@ let options = [
   'Very doubtful.'
 ]
 
-//Event listener for button click
-button.addEventListener('click', generateAnswer);
-question.addEventListener("keypress", enterButton);
+// Event listeners for enter key or button click
+question.addEventListener('keypress', enterButton);
+button.addEventListener('click', validateQuestion);
 
-// Generate a random number
+// Enter key trigers click event
+function enterButton (event) {
+  if (event.key === "Enter") {
+    event.preventDefault();
+    button.click();
+  }
+};
+
+// Validation for empty question input field
+function validateQuestion() {
+  if (document.querySelector('.user-question'). value == "") {
+    errorMessage.style.display = 'block';
+    return false;
+  } else {
+    generateAnswer();
+    errorMessage.style.display = 'none';
+  }
+};
+
+// Generate a random answer from array
 function generateAnswer() {
-  let index = Math.floor(Math.random() * 20);
-  let message = options[index];
-  answer.textContent = message;
+  let selectedAnswer = Math.floor(Math.random() * 20);
+  let displayedAnswer = answersArray[selectedAnswer];
+  answer.textContent = displayedAnswer;
   answer.style.fontSize = '18px';
-  setTimeout(timeOut, 3000);
+  setTimeout(timeOut, 2000);
 };
 
 // Timeout function
 function timeOut() {
   answer.textContent = '8';
   answer.style.fontSize = '120px';
-};
-
-// Enter button trigers click event
-function enterButton (event) {
-  if (event.key === "Enter") {
-    event.preventDefault();
-    button.click();
-  }
 };

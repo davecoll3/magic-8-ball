@@ -114,6 +114,14 @@ USER INPUT
   margin: 0;
 }
 
+.error-message-text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 600;
+  margin: 8px;
+  display: none;
+}
+
 /* ==========
 FOOTER
 ========== */
