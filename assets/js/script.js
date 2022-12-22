@@ -33,7 +33,7 @@ let answersArray = [
   'My sources say no.',
   'Outlook not so good.',
   'Very doubtful.'
-]
+];
 
 // Event listeners for enter key or button click
 question.addEventListener('keypress', enterButton);
@@ -45,7 +45,7 @@ function enterButton (event) {
     event.preventDefault();
     button.click();
   }
-};
+}
 
 // Validation for empty question input field
 function validateQuestion() {
@@ -58,7 +58,7 @@ function validateQuestion() {
     button.disabled = true;
     setTimeout(animationTimeOut, 1000);
   }
-};
+}
 
 // Generate a random answer from array
 function generateAnswer() {
@@ -69,15 +69,13 @@ function generateAnswer() {
   answer.classList.add('answer-text');
   
   setTimeout(answerTimeOut, 2000);
-};
+}
 
 // Answer display timeout
 function animationTimeOut() {
   ballBlack.classList.remove('animate');
   generateAnswer();
-  errorMessage.classList.add('error-message-display');
-  
-};
+}
 
 // Clear answer timeout function
 function answerTimeOut() {
@@ -85,9 +83,9 @@ function answerTimeOut() {
   answer.classList.remove('answer-text');
   answer.classList.add('holding-text');
   button.disabled = false;
-};
+}
 
 // Error message timeout function
 function errorTimeOut() {
   errorMessage.classList.add('error-message-display');
-};
+}
