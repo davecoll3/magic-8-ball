@@ -68,6 +68,10 @@ HEADER
 /* ==========
 USER INPUT
 ========== */
+.user-question {
+  margin: 8px;
+}
+
 .btn {
   color: #fff;
   font-weight: 700;
@@ -88,10 +92,20 @@ USER INPUT
   height: 400px;
   background-color: #000;
   border-radius: 50%;
+  border-color: #F5F5F5;
   display: flex; 
   align-items: center;
   justify-content: center;
-  margin: 20px;
+  margin: 50px;
+  box-shadow:
+    inset 0 0 50px #696969,      /* inner dim gray */
+    inset 20px 0 80px #000,   /* inner left black short */
+    inset -20px 0 80px #400080,  /* inner right deep purple short */
+    inset 20px 0 300px #000,  /* inner left black broad */
+    inset -20px 0 300px #400080, /* inner right deep purple broad */
+    0 0 20px 10px #F5F5F5, /* outer white */
+    0 0 40px 15px #c0c, /* outer left magenta */
+    0 0 60px 20px #0ff; /* outer right cyan */
 }
 
 .ball-white {
@@ -104,7 +118,7 @@ USER INPUT
   justify-content: center;
 }
 
-#answer {
+.holding-text {
   width: 90px;
   color: #000;
   border-radius: 50%;
@@ -114,11 +128,24 @@ USER INPUT
   margin: 0;
 }
 
+.answer-text {
+  width: 90px;
+  color: #000;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+  margin: 0;
+}
+
 .error-message-text {
   color: #fff;
   font-size: 18px;
   font-weight: 600;
   margin: 8px;
+}
+
+.error-message-display {
   display: none;
 }
 
@@ -140,4 +167,23 @@ footer {
 
 .copyright p {
   margin-bottom: 0;
+}
+
+/* ==========
+ANIMATION
+========== */
+
+.animate {
+  animation-name: shake;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
+  animation-fill-mode: forwards;
+}
+
+@keyframes shake {
+  0% {transform: translate(0,0) rotate(0deg) scale(1.1,1.1);}
+  0% {transform: translate(10px, 10px) rotate(30deg) scale(1.3,1.3);}
+  0% {transform: translate(0,0) rotate(0deg) scale(1.1,1.1);}
+  0% {transform: translate(-10px, 10px) rotate(-30deg) scale(1.5,1.5);}
 }

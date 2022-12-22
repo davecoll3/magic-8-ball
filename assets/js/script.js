@@ -6,12 +6,12 @@
 **/
 
 // Selectors for elements on the page to interact with
-let question = document.querySelector('.user-question');
-let button = document.querySelector('#shakeButton');
-let answer = document.querySelector('#answer');
-let errorMessage = document.querySelector('.error-message-text');
+const question = document.querySelector('.user-question');
+const button = document.querySelector('#shakeButton');
+const answer = document.querySelector('.holding-text');
+const errorMessage = document.querySelector('.error-message-text');
 
-let answersArray = [
+const answersArray = [
   'It is certain.',
   'It is decidedly so.',
   'Without a doubt.',
@@ -48,12 +48,13 @@ function enterButton (event) {
 
 // Validation for empty question input field
 function validateQuestion() {
-  if (document.querySelector('.user-question'). value == "") {
-    errorMessage.style.display = 'block';
+  if (question.value == "") {
+    errorMessage.classList.remove('error-message-display');
+    setTimeout(errorTimeOut, 1500);
     return false;
   } else {
     generateAnswer();
-    errorMessage.style.display = 'none';
+    errorMessage.classList.add('error-message-display');
   }
 };
 
@@ -62,12 +63,19 @@ function generateAnswer() {
   let selectedAnswer = Math.floor(Math.random() * 20);
   let displayedAnswer = answersArray[selectedAnswer];
   answer.textContent = displayedAnswer;
-  answer.style.fontSize = '18px';
-  setTimeout(timeOut, 2000);
+  answer.classList.remove('holding-text');
+  answer.classList.add('answer-text');
+  setTimeout(answerTimeOut, 2000);
 };
 
-// Timeout function
-function timeOut() {
+// Answer timeout function
+function answerTimeOut() {
   answer.textContent = '8';
-  answer.style.fontSize = '120px';
+  answer.classList.remove('answer-text');
+  answer.classList.add('holding-text');
+};
+
+// Error message timeout function
+function errorTimeOut() {
+  errorMessage.classList.add('error-message-display');
 };
