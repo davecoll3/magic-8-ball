@@ -1,12 +1,11 @@
 /* ==========
-GOOGLE FONT
+GOOGLE FONTS
 ========== */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&family=Orbitron&display=swap');
 
 /* ==========
 GENERAL
 ========== */
-
 * {
   margin: 0;
   padding: 0;
@@ -35,28 +34,13 @@ body {
 }
 
 /* ==========
-NAVBAR
-========== */
-.navbar {
-  width: 100%;
-  text-align: end;
-  background-color: #181818;
-}
-
-.navbar-brand {
-  font-family: 'Orbitron', sans-serif;
-  color: #A9A9A9;
-}
-
-/* ==========
 HEADER
 ========== */
-
 .heading h1 {
   font-style: italic;
   font-size: 60px;
   font-weight: 700;
-  margin: 10px;
+  margin: 24px 0 8px 0;
 }
 
 .heading p {
@@ -66,26 +50,7 @@ HEADER
 }
 
 /* ==========
-USER INPUT
-========== */
-.user-question {
-  margin: 8px;
-}
-
-.btn {
-  color: #fff;
-  font-weight: 700;
-  background-color: rgba(0, 0, 0, 0.5);
-  border-color: #8000ff;
-}
-
-.btn:hover {
-  background-color: #400080;
-  border-color: #8000ff;
-}
-
-/* ==========
-8 Ball
+8 BALL
 ========== */
 .ball-black {
   width: 400px;
@@ -98,10 +63,10 @@ USER INPUT
   justify-content: center;
   margin: 50px;
   box-shadow:
-    inset 0 0 50px #696969,      /* inner dim gray */
-    inset 20px 0 80px #000,   /* inner left black short */
-    inset -20px 0 80px #400080,  /* inner right deep purple short */
-    inset 20px 0 300px #000,  /* inner left black broad */
+    inset 0 0 50px #696969, /* inner dim gray */
+    inset 20px 0 80px #000, /* inner left black short */
+    inset -20px 0 80px #400080, /* inner right deep purple short */
+    inset 20px 0 300px #000, /* inner left black broad */
     inset -20px 0 300px #400080, /* inner right deep purple broad */
     0 0 20px 10px #F5F5F5, /* outer white */
     0 0 40px 15px #c0c, /* outer left magenta */
@@ -124,7 +89,7 @@ USER INPUT
   border-radius: 50%;
   text-align: center;
   font-weight: 800;
-  font-size: 120px;
+  font-size: 160px;
   margin: 0;
 }
 
@@ -138,6 +103,28 @@ USER INPUT
   margin: 0;
 }
 
+/* ==========
+USER INPUT
+========== */
+.user-question {
+  margin: 8px;
+}
+
+.btn {
+  color: #fff;
+  font-weight: 700;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-color: #8000ff;
+}
+
+.btn:hover {
+  background-color: #400080;
+  border-color: #8000ff;
+}
+
+/* ==========
+VALIDATION ERROR MESSAGE
+========== */
 .error-message-text {
   color: #fff;
   font-size: 18px;
@@ -152,7 +139,6 @@ USER INPUT
 /* ==========
 FOOTER
 ========== */
-
 footer {
   width: 100%;
   text-align: center;
@@ -177,14 +163,150 @@ ANIMATION
   animation-name: shake;
   animation-duration: 0.9s;
   animation-iteration-count: 1;
-  animation-timing-function: ease;
-  animation-fill-mode: forwards;
 }
 
-@keyframes shake {
-  0% {transform: translate(0,0) rotate(0deg)}
-  25% {transform: translate(5px, 5px) rotate(120deg)}
-  50% {transform: translate(-5px, 5px) rotate(-150deg)}
-  75% {transform: translate(5px, 5px) rotate(45deg)}
-  100% {transform: translate(0,0) rotate(0deg);}
+@keyframes shake{
+  0% {transform:translateX(0px);}
+  10%{transform:translateX(5px);}
+  20%{transform:translateX(-5px);}
+  30%{transform:translateX(15px);}
+  40%{transform:translateX(-15px);}
+  50%{transform:translateX(25px);}
+  60%{transform:translateX(-25px);}
+  70%{transform:translateX(15px);}
+  80%{transform:translateX(-15px);}
+  90%{transform:translateX(5px);}
+  100%{transform:translateX(0px);}
+}
+
+/* ==========
+MEDIA QUERIES
+========== */
+@media (max-width:339px) {
+  /* Header */
+  .heading h1 {
+    font-size: 30px;
+    margin: 16px 0 6px 0;
+  }
+  
+  .heading p {
+    font-size: 14px;
+    margin: 6px 18px;
+  }
+
+  /* 8 Ball */
+  .ball-black {
+    width: 260px;
+    height: 260px;
+    margin: 20px;
+  }
+  
+  .ball-white {
+    width: 125px;
+    height: 125px;
+  }
+  .holding-text {
+    width: 60px;
+    font-size: 100px;
+  }
+  
+  .answer-text {
+    width: 60px;
+    font-size: 14px;
+  }
+
+  /* Validation Error Message */
+  .error-message-text {
+    font-size: 14px;
+} 
+}
+
+@media (min-width: 330px) and (max-width:480px) {
+  /* Header */
+  .heading h1 {
+    font-size: 40px;
+    margin: 18px 0 6px 0;
+  }
+  
+  .heading p {
+    font-size: 16px;
+    margin: 6px 24px;
+  }
+
+  /* 8 Ball */
+  .ball-black {
+    width: 300px;
+    height: 300px;
+    margin: 30px;
+  }
+  
+  .ball-white {
+    width: 135px;
+    height: 135px;
+  }
+  .holding-text {
+    width: 80px;
+    font-size: 120px;
+  }
+  
+  .answer-text {
+    width: 80px;
+    font-size: 16px;
+  }
+
+  /* Validation Error Message */
+  .error-message-text {
+    font-size: 16px;
+}
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  /* Header */
+  .heading h1 {
+    font-size: 50px;
+    margin: 24px 0 8px 0;
+  }
+  
+  .heading p {
+    font-size: 18px;
+    margin: 8px 30px;
+  }
+
+  /* 8 Ball */
+  .ball-black {
+    width: 360px;
+    height: 360px;
+    margin: 30px;
+  }
+  
+  .ball-white {
+    width: 165px;
+    height: 165px;
+  }
+  .holding-text {
+    width: 85px;
+    font-size: 140px;
+  }
+  
+  .answer-text {
+    width: 85px;
+    font-size: 18px;
+  }
+
+  /* Validation Error Message */
+  .error-message-text {
+    font-size: 18px;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+ 
+}
+
+@media (min-width: 1200px) {
+  
 }
