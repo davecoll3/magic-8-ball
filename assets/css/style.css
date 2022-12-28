@@ -128,6 +128,15 @@ USER INPUT
   margin: 8px;
 }
 
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #505050;
+  opacity: 1; /* Firefox */
+}
+
+.form-control::-ms-input-placeholder { /* Microsoft Edge */
+  color: #505050;
+}
+
 .btn {
   color: #fff;
   font-weight: 700;
@@ -167,12 +176,12 @@ FOOTER
   flex-shrink: 0;
   text-align: center;
   margin: 8px;
+  color: #DCDCDC;
 }
 
 .copyright {
   font-family: 'Orbitron', sans-serif;
   background-color: rgba(0, 0, 0, 0.1);
-  color: #A9A9A9;
 }
 
 .copyright p {
