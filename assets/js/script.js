@@ -1,11 +1,4 @@
-/**
-1. Global Constants
-2. Global vars = let
-3. function
-4. document ready
-**/
-
-// Array of possible answers
+/** Array of possible answers. */
 const ANSWERS = [
   'It is certain.',
   'It is decidedly so.',
@@ -29,30 +22,39 @@ const ANSWERS = [
   'Very doubtful.'
 ];
 
-// Selectors for elements on the page to interact with
+/** Selectors for elements on the page to interact with. */
 let question = document.querySelector('.user-question');
 let button = document.querySelector('#shakeButton');
 let ballBlack = document.querySelector('.ball-black');
 let answer = document.querySelector('.holding-text');
 let errorMessage = document.querySelector('.error-message-text');
 
-// DOMContentLoaded event
+/** 
+ * DOMContentLoaded event.
+ * with event listeners for enter key press or button click.
+ */
 document.addEventListener('DOMContentLoaded', function() {
-  // Event listeners for enter key or button click
   question.addEventListener('keypress', enterButton);
   button.addEventListener('click', validateQuestion);
 });
 
 
-// Enter key trigers click event
+/** 
+ * If the user presses the "Enter" key on the keyboard.
+ * Trigger the button element with a click.
+ */
 function enterButton (event) {
   if (event.key === "Enter") {
-    event.preventDefault();
     button.click();
   }
 }
 
-// Validation for empty question input field
+/** 
+ * If the user question is an empty string.
+ * Display error message class & remove after 1.5 seconds.
+ * Else, add animate class for eight ball & remove after 1 second.
+ * Also, disable button during animation.
+ */
 function validateQuestion() {
   if (question.value == "") {
     errorMessage.classList.remove('error-message-display');
@@ -65,24 +67,37 @@ function validateQuestion() {
   }
 }
 
-// Generate a random answer from array
+/** 
+ * Remove animate class.
+ * Execute generateAnswer function.
+ */
+function animationTimeOut() {
+  ballBlack.classList.remove('animate');
+  generateAnswer();
+}
+
+/** 
+ * Generate a random integer between 0 and 19.
+ * Use randomly generated integer to select an answer from ANSWERS array.
+ * Change text content of eight ball to display selected answer.
+ * Revert back to holding eight ball text after 2 seconds.
+ */
 function generateAnswer() {
   let selectedAnswer = Math.floor(Math.random() * 20);
   let displayedAnswer = ANSWERS[selectedAnswer];
   answer.textContent = displayedAnswer;
   answer.classList.remove('holding-text');
   answer.classList.add('answer-text');
-  
+
   setTimeout(answerTimeOut, 2000);
 }
 
-// Answer display timeout
-function animationTimeOut() {
-  ballBlack.classList.remove('animate');
-  generateAnswer();
-}
-
-// Clear answer timeout function
+/** 
+ * Change text content of eight ball to 8.
+ * Remove answer-text class.
+ * Add holding-text class.
+ * Enable button.
+ */
 function answerTimeOut() {
   answer.textContent = '8';
   answer.classList.remove('answer-text');
@@ -90,7 +105,7 @@ function answerTimeOut() {
   button.disabled = false;
 }
 
-// Error message timeout function
+/** Add error-message-display class. */
 function errorTimeOut() {
   errorMessage.classList.add('error-message-display');
 }
