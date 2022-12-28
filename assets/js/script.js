@@ -5,14 +5,8 @@
 4. document ready
 **/
 
-// Selectors for elements on the page to interact with
-let question = document.querySelector('.user-question');
-let button = document.querySelector('#shakeButton');
-let ballBlack = document.querySelector('.ball-black');
-let answer = document.querySelector('.holding-text');
-let errorMessage = document.querySelector('.error-message-text');
-
-let answersArray = [
+// Array of possible answers
+const ANSWERS = [
   'It is certain.',
   'It is decidedly so.',
   'Without a doubt.',
@@ -35,9 +29,20 @@ let answersArray = [
   'Very doubtful.'
 ];
 
-// Event listeners for enter key or button click
-question.addEventListener('keypress', enterButton);
-button.addEventListener('click', validateQuestion);
+// Selectors for elements on the page to interact with
+let question = document.querySelector('.user-question');
+let button = document.querySelector('#shakeButton');
+let ballBlack = document.querySelector('.ball-black');
+let answer = document.querySelector('.holding-text');
+let errorMessage = document.querySelector('.error-message-text');
+
+// DOMContentLoaded event
+document.addEventListener('DOMContentLoaded', function() {
+  // Event listeners for enter key or button click
+  question.addEventListener('keypress', enterButton);
+  button.addEventListener('click', validateQuestion);
+});
+
 
 // Enter key trigers click event
 function enterButton (event) {
@@ -63,7 +68,7 @@ function validateQuestion() {
 // Generate a random answer from array
 function generateAnswer() {
   let selectedAnswer = Math.floor(Math.random() * 20);
-  let displayedAnswer = answersArray[selectedAnswer];
+  let displayedAnswer = ANSWERS[selectedAnswer];
   answer.textContent = displayedAnswer;
   answer.classList.remove('holding-text');
   answer.classList.add('answer-text');

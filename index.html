@@ -19,48 +19,50 @@
 </head>
 
 <body>
+  <div class="game-content">
+    <!-- Header -->
+    <header class="heading">
+      <h1>The Magic 8 Ball</h1>
+      <p>Shake the Magic 8 Ball and it will answer your question.</p>
+    </header>
+    <!-- Header End-->
 
-  <!-- Header -->
-  <header class="heading">
-    <h1>The Magic 8 Ball</h1>
-    <p>Shake the Magic 8 Ball and it will answer your question.</p>
-  </header>
-  <!-- Header End-->
+    <main>
+      <!-- Magic 8 Ball -->
+      <div class="ball-black">
+        <div class="ball-white">
+          <p class="holding-text">8</p>
+        </div>
+      </div>
+      <!-- Magic 8 Ball End -->
 
-  <!-- Magic 8 Ball -->
-  <div class="ball-black">
-    <div class="ball-white">
-      <p class="holding-text">8</p>
-    </div>
+      <!-- User Input -->
+      <div class="user-input">
+        <input type="text" class="form-control user-question" placeholder="What is your question?">
+        <button type="button" class="btn" id="shakeButton">Shake!</button>
+      </div>
+      <!-- User Input -->
+
+      <!-- Validation Error Message -->
+      <div>
+        <div class="error-message-text error-message-display">
+          <p>Please ask a question!</p>
+      </div>
+      <!-- Validation Error Message End -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="copyright">
+        <p>Copyright © dc games 2022</p>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <!-- JavaScript Link -->
+    <script type="text/javascript" src="assets/js/script.js"></script>
+    <!-- JavaScript Link End -->
   </div>
-  <!-- Magic 8 Ball End -->
-
-  <!-- User Input -->
-  <div>
-    <input type="text" class="form-control mb-2 mr-sm-2 user-question" id="inlineFormInputName2" placeholder="What is your question?">
-    <button type="button" class="btn" id="shakeButton">Shake!</button>
-  </div>
-  <!-- User Input -->
-
-  <!-- Validation Error Message -->
-  <div>
-    <div class="error-message-text error-message-display">
-      <p>Please ask a question!</p>
-  </div>
-  <!-- Validation Error Message End -->
-
-  <!-- Footer -->
-  <footer>
-    <div class="copyright fixed-bottom">
-      <p>Copyright © dc games 2022</p>
-    </div>
-  </footer>
-  <!-- Footer End -->
-
-  <!-- JavaScript Link -->
-  <script type="text/javascript" src="assets/js/script.js"></script>
-  <!-- JavaScript Link End -->
-
 </body>
 
 </html>

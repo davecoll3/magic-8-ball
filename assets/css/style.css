@@ -9,7 +9,7 @@ GENERAL
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  border: 0;
 }
   
 html {
@@ -17,20 +17,30 @@ html {
 }
   
 body {
-  background: url("../images/8-ball-background.webp") no-repeat bottom center;
+  background: url("../images/8-ball-background.webp") top center; /*BUG: no-repeat causing to cut off background on mobile devices. Also changed 'bottom' to 'top' for increased contrast with text*/
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-
+  
   font-family: 'Nunito', sans-serif;
+  height: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  overflow: hidden;
-  min-height: 100%;
   color: #fff;
+}
+
+.game-content {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main {
+  flex-grow: 1;
 }
 
 /* ==========
@@ -106,7 +116,15 @@ HEADER
 /* ==========
 USER INPUT
 ========== */
+.user-input {
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 .user-question {
+  width: 50%;
   margin: 8px;
 }
 
@@ -115,6 +133,7 @@ USER INPUT
   font-weight: 700;
   background-color: rgba(0, 0, 0, 0.5);
   border-color: #8000ff;
+  margin: 8px;
 }
 
 .btn:hover {
@@ -132,6 +151,10 @@ VALIDATION ERROR MESSAGE
   margin: 8px;
 }
 
+.error-message-text p {
+  margin: 0;
+}
+
 .error-message-display {
   display: none;
 }
@@ -139,15 +162,16 @@ VALIDATION ERROR MESSAGE
 /* ==========
 FOOTER
 ========== */
-footer {
-  width: 100%;
+
+.footer {
+  flex-shrink: 0;
   text-align: center;
-  margin: auto;
+  margin: 8px;
 }
 
 .copyright {
   font-family: 'Orbitron', sans-serif;
-  background-color: #181818;
+  background-color: rgba(0, 0, 0, 0.1);
   color: #A9A9A9;
 }
 
