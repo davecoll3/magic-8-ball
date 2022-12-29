@@ -11,19 +11,19 @@
 ### Header
 * Expected
   * The header should be located at the top of the page and the text of both elements, within the header, should maintain good contrast with the background image on all devices and screen sizes.
-  * On devices with a screen width of 768px or smaller, the font size of the h1 and p elements should reduce; reducing further at the screen width break points of 480px and 339px. 
+  * On devices with a screen width of 768px or smaller, the font size of the h1 and p elements should reduce; reducing further at the screen width (screen height for landscape orientation) break points of 480px and 339px. 
 
 * Testing
   * The header was tested on a laptop with a screen width of greater than 768px in order to verify that the font size and text/background contrast was sufficent. 
   * Chrome DevTools was used to simulate mobile devices and to check for reactiveness.
     <details><summary>Header Testing</summary>
-      <img src="">
+      <img src="readme-files/images/testing-header.gif">
     </details>
 
 * Result
   * The heading responded as expected in all of the above testing.
   * The header is located at the top of the page and the text of both elements, within the header, maintain good contrast with the background image on all devices and screen sizes.
-  * On devices with a screen width of 768px or smaller, the font size of the h1 and p elements reduce in size as expected; reducing further at the screen width break points of 480px and 339px. 
+  * On devices with a screen width of 768px or smaller, the font size of the h1 and p elements reduce in size as expected; reducing further at the screen width (screen height for landscape orientation) break points of 480px and 339px. 
 
 &nbsp;
 
@@ -32,14 +32,14 @@
   * Expected
     * The 8 Ball should be located centrally below the header and consist of an outer black circle and an inner white circle. The holding text should be a black number "8". 
     * A glow effect should be visable around the outer edge of the black circle which blends well with the background image.
-    * On devices with a screen width of 768px or smaller, the 8 ball, and text within, should reduce in size; reducing further at the screen width break points of 480px and 339px. 
+    * On devices with a screen width of 768px or smaller, the 8 ball, and text within, should reduce in size; reducing further at the screen width (screen height for landscape orientation) break points of 480px and 339px. 
 
   * Testing
     * The 8 Ball was tested on a laptop with a screen width of greater than 768px in order to verify that the size and contrast with the background image was sufficent. 
     * Chrome DevTools was used to simulate mobile devices and to check for reactiveness.
     * The 8 Ball was checked in both portrait and landscape orientations on mobile devices to ensure that it continued to function sufficently well.
       <details><summary>8 Ball Testing</summary>
-        <img src="">
+        <img src="readme-files/images/testing-8-ball.gif">
       </details>
 
   * Result
