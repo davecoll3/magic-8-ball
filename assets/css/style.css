@@ -162,7 +162,6 @@ VALIDATION ERROR MESSAGE
 /* ==========
 FOOTER
 ========== */
-
 .footer {
   flex-shrink: 0;
   text-align: center;
@@ -182,7 +181,6 @@ FOOTER
 /* ==========
 ANIMATION
 ========== */
-
 .animate {
   animation-name: shake;
   animation-duration: 0.9s;
@@ -204,9 +202,9 @@ ANIMATION
 }
 
 /* ==========
-MEDIA QUERIES
+MEDIA QUERIES PORTRAIT ORIENTATION
 ========== */
-@media (max-width:339px) {
+@media (orientation: portrait) and (max-width:339px) {
   /* Header */
   .heading h1 {
     font-size: 30px;
@@ -242,10 +240,10 @@ MEDIA QUERIES
   /* Validation Error Message */
   .error-message-text {
     font-size: 14px;
-} 
+  } 
 }
 
-@media (min-width: 330px) and (max-width:480px) {
+@media (orientation: portrait) and (min-width: 330px) and (max-width:480px) {
   /* Header */
   .heading h1 {
     font-size: 40px;
@@ -281,9 +279,116 @@ MEDIA QUERIES
   /* Validation Error Message */
   .error-message-text {
     font-size: 16px;
-}
+  }
 }
 
+/* ==========
+MEDIA QUERIES LANDSCAPE ORIENTATION
+========== */
+@media (orientation: landscape) and (max-height:339px) {
+  /* Header */
+  .heading h1 {
+    font-size: 20px;
+    margin: 12px 0 6px 0;
+  }
+  
+  .heading p {
+    font-size: 14px;
+    margin: 2px 12px;
+  }
+  
+  /* 8 Ball */
+  .ball-black {
+    width: 200px;
+    height: 200px;
+    margin: 16px;
+  }
+    
+  .ball-white {
+    width: 90px;
+    height: 90px;
+  }
+  .holding-text {
+    width: 50px;
+    font-size: 80px;
+  }
+    
+  .answer-text {
+    width: 50px;
+    font-size: 14px;
+  }
+
+  .user-question {
+    width: 75%;
+    font-size: 14px;
+    margin: 4px;
+  }
+    
+  .btn {
+    font-size: 14px;
+    margin: 4px;
+  }
+  
+  /* Validation Error Message */
+  .error-message-text {
+    font-size: 14px;
+  } 
+}
+
+@media (orientation: landscape) and (min-height: 330px) and (max-height:480px) {
+  /* Header */
+  .heading h1 {
+    font-size: 32px;
+    margin: 12px 0 6px 0;
+  }
+
+  .heading p {
+    font-size: 14px;
+    margin: 2px 12px;
+  }
+
+  /* 8 Ball */
+  .ball-black {
+    width: 260px;
+    height: 260px;
+    margin: 20px;
+  }
+    
+  .ball-white {
+    width: 125px;
+    height: 125px;
+  }
+  .holding-text {
+    width: 60px;
+    font-size: 100px;
+  }
+    
+  .answer-text {
+    width: 60px;
+    font-size: 14px;
+  }
+
+  /* User Input */
+  .user-question {
+    width: 75%;
+    font-size: 14px;
+    margin: 4px;
+  }
+
+  .btn {
+    font-size: 14px;
+    margin: 4px;
+  }
+
+  /* Validation Error Message */
+  .error-message-text {
+    font-size: 14px;
+  } 
+}
+
+/* ==========
+MEDIA QUERIES GENERAL
+========== */
 @media (min-width: 481px) and (max-width: 768px) {
   /* Header */
   .heading h1 {
@@ -320,17 +425,5 @@ MEDIA QUERIES
   /* Validation Error Message */
   .error-message-text {
     font-size: 18px;
-}
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-
-}
-
-@media (min-width: 1025px) and (max-width: 1200px) {
- 
-}
-
-@media (min-width: 1200px) {
-  
+  }
 }

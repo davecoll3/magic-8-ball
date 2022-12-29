@@ -96,12 +96,14 @@ function generateAnswer() {
  * Change text content of eight ball to 8.
  * Remove answer-text class.
  * Add holding-text class.
+ * Remove previous question from text input field.
  * Enable button.
  */
 function answerTimeOut() {
   answer.textContent = '8';
   answer.classList.remove('answer-text');
   answer.classList.add('holding-text');
+  question.value = '';
   button.disabled = false;
 }
 

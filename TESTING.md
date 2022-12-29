@@ -8,184 +8,134 @@
 
 ## Manual Testing
 
-### Navbar
+### Header
 * Expected
-  * The navbar should be located at the top of the page and disappear when the user scrolls down the page.
-  * On devices with a screen width of 576px and greater, the navbar should display navigation links for each of the website pages and highlight the current page in white text.
-  * When clicked on, navigation links should bring the user to the relevant section of the website.
-  * On laptops and desktops, the user should be provided with feedback when hovering over links to other pages as the text color changes to a lighter shade of grey.
-  * On mobile devices, with a screen width of 575px or below, the navigation menu should collapse into a burger icon. All navigation links should drop down when the burger icon is clicked and the current page should be highlighted in white text.
+  * The header should be located at the top of the page and the text of both elements, within the header, should maintain good contrast with the background image on all devices and screen sizes.
+  * On devices with a screen width of 768px or smaller, the font size of the h1 and p elements should reduce; reducing further at the screen width break points of 480px and 339px. 
 
 * Testing
-  * The navbar was tested on a laptop with a screen width of greater than 576px in order to verify that the navigation links were displayed across the top of the page with the current page highlighted in white text. It was also verified that the navigation links changed color by hovering over them with the cursor.
-  * Chrome DevTools was used to simulate mobile devices and to check for reactiveness. A device with a screen width of less than 575px was selected to ensure that the navigation menu collapsed down into a burger icon. This icon was then selected to ensure that the navigation links were revealed and the current page was highlighted in white text.
-    <details><summary>Navbar Testing</summary>
-      <img src="readme-files/images/navbar-testing.gif">
+  * The header was tested on a laptop with a screen width of greater than 768px in order to verify that the font size and text/background contrast was sufficent. 
+  * Chrome DevTools was used to simulate mobile devices and to check for reactiveness.
+    <details><summary>Header Testing</summary>
+      <img src="">
     </details>
 
 * Result
-  * The navbar responded as expected in all of the above testing.
-  * The navbar was found at the top of the page and disappeared when the user scrolled down the page.
-  * On devices with a screen width of greater than 576px, navigation links were displayed in a row with the current page highlighted in white text. 
-  * On laptops and desktops, the navigation links changed color upon hovering over them with the cursor.
-  * On mobile devices, with a screen width of 575px or below, the navigation menu collapsed into a burger icon. All navigation links were revealed when the burger icon was clicked and the current page was highlighted in white text.
+  * The heading responded as expected in all of the above testing.
+  * The header is located at the top of the page and the text of both elements, within the header, maintain good contrast with the background image on all devices and screen sizes.
+  * On devices with a screen width of 768px or smaller, the font size of the h1 and p elements reduce in size as expected; reducing further at the screen width break points of 480px and 339px. 
 
 &nbsp;
 
-### Callout Banner
+### 8 Ball
 
   * Expected
-    * The callout banner should display an avatar image of the site owner, a main heading (their name), and a subheading (their profession/service offered).
-    * The background image should provide sufficient contrast and not interfere with the visibility of the image and heading elements.
-    * All content should be horizontally aligned to the center of the page and be reactive to various devices and screen sizes.
+    * The 8 Ball should be located centrally below the header and consist of an outer black circle and an inner white circle. The holding text should be a black number "8". 
+    * A glow effect should be visable around the outer edge of the black circle which blends well with the background image.
+    * On devices with a screen width of 768px or smaller, the 8 ball, and text within, should reduce in size; reducing further at the screen width break points of 480px and 339px. 
 
   * Testing
-    * The callout banner was tested for responsiveness on various screen sizes and devices using Chrome DevTools.
-    * Testing was carried out across various devices and screen widths to ensure that the heading and text remained horizontally aligned to the center of the page.
-    * The background was checked in both portrait and landscape orientations on mobile devices to ensure that it did not interfere with the visibility of the image and heading elements.
-      <details><summary>Callout Banner Testing</summary>
-        <img src="readme-files/images/callout-testing.gif">
+    * The 8 Ball was tested on a laptop with a screen width of greater than 768px in order to verify that the size and contrast with the background image was sufficent. 
+    * Chrome DevTools was used to simulate mobile devices and to check for reactiveness.
+    * The 8 Ball was checked in both portrait and landscape orientations on mobile devices to ensure that it continued to function sufficently well.
+      <details><summary>8 Ball Testing</summary>
+        <img src="">
       </details>
 
   * Result
-    * The callout banner responded as expected in all of the above testing.
+    * The 8 Ball responded as expected in all of the above testing.
     * All content was horizontally aligned to the center of the page and reactive to various devices and screen sizes.
-    * The background image provided sufficient contrast and did not interfere with the visibility of the image and heading elements.
+    * A glow effect is visable around the outer edge of the black circle and blends well with the background image.
+    * The 8 Ball functions well on mobile devices in both portrait and landscape orientation.
 
 &nbsp;
 
-### About Me Section
+### 8 Ball Animation
 
   * Expected
-    * The heading and text on the about me section should be black with a white background and sit directly under the callout banner.
-    * All content should be horizontally aligned to the center of the page and be reactive to various devices and screen sizes.
+    * When a user submits a valid question, using either the enter key or "Shake!" button, a 1 second animation should shake the 8 Ball from side-to-side.
+    * When the animation has ended, an answer should be displayed, at the center of the 8 ball, for 2 seconds.
+    * The 8 Ball should then return to its default state.  
 
   * Testing
-    * The about me section was tested for responsiveness on various screen sizes and devices using Chrome DevTools.
-    * Testing was carried out across various devices and screen widths to ensure that the heading and text remained horizontally aligned to the center of the page.
-      <details><summary>About Me Section Testing</summary>
-        <img src="readme-files/images/about-me-testing.gif">
+    * A valid question was submitted to trigger the 8 ball.
+    * The 8 Ball animation was checked in both portrait and landscape orientations on mobile devices to ensure that it continued to function sufficently well.
+      <details><summary>8 Ball Animation Testing</summary>
+        <img src="">
       </details>
 
   * Result
-    * The about me section responded as expected in all of the above testing.
-    * All content was horizontally aligned to the center of the page and reactive to various devices and screen sizes.
+    * When a valid question was submitted, the 8 Ball animation began as expected, lasting 1 second.
+    * After the animation, an answer was displayed, at the center of the 8 Ball, for 2 seconds.
+    * The 8 Ball then returned to its default state.
+    * The 8 Ball animation functions well on mobile devices in both portrait and landscape orientation.
+
+&nbsp;
+
+### User Input
+
+  * Expected
+    * The user input should consist of a text input and a button element.
+    * Placeholder text should be displayed, within the text input, prompting the user to submit a question.
+    * The "Shake!" button should provide feedback when the user hovers over it or clicks on it, when used on a desktop device..
+    * It should be possible to submit a valid question by either an 'enter' key press or by clicking on the "Shake!" button.
+    * Once a valid question has been submitted, it should not be possible to submit a subsequent question until after the 8 Ball animation, and dispying of the answer text, has ended.
+    * When the 8 Ball animation and dispying of the answer text have ended, the text input field should be cleared of the previous question.
+
+  * Testing
+    * A valid question was submitted using first the 'enter' key and subsequently by clicking on the "Shake!" button.
+    * Attempts to resubmit a question were made while the 8 Ball animation was running and answer was being displayed.
+    * The "Shake!" button was checked for feedback upon hover over and click events, when used on a desktop device.
+      <details><summary>User Input Testing</summary>
+        <img src="">
+      </details>
+
+  * Result
+    * Placeholder text is displayed, within the text input, prompting the user to submit a question.
+    * The "Shake!" button provides feedback when the user hovers over it or clicks on it, when used on a desktop device..
+    * A valid question can be submitted by either an 'enter' key press or by clicking on the "Shake!" button. 
+    * When a valid question is submitted, it is not be possible to submit a subsequent question until after the 8 Ball animation, and dispying of the answer text, has ended.
+    * When the 8 Ball animation and dispying of the answer text end, the text input field is cleared of the previous question.
+        
+&nbsp;
+
+### Error Message
+
+  * Expected
+    * When the user attempts to submit a question, without typing anything into the text input field, an error message should appear below the "Shake!" button, prompting them to ask a question.
+    * The error message should disappear after 1.5 seconds.
+
+  * Testing
+    * Multiple attempts were made to submit an empty text input field using both the 'enter' key and by clicking on the "Shake!" button.
+    * Testing was carried out across various devices and screen widths to ensure that the error message appeared as expected and that the text remained horizontally aligned to the center of the page while maintaining good contrast with the background image.
+      <details><summary>Error Message Testing</summary>
+        <img src="">
+      </details>
+
+  * Result
+    * When a user attempted to submit a question, without typing anything into the text input field, an error message appears below the "Shake!" button, prompting them to ask a question.
+    * The error message disappears after 1.5 seconds.
+    * The error message appears as expected, on all devices and screen sizes, and the text remains horizontally aligned to the center of the page while maintaining good contrast with the background image.
 
 &nbsp;
 
 ### Footer
 
   * Expected
-    * The footer should be located at the bottom of the page and contain social media links/icons above copyright text.
-    * The social media links/icons should be a shade of grey with a white background, while the copyright text should be a dark shade of grey with a light grey background.
-    * When clicked on, social media links should send the user to the relevant website, opening in a new tab.
-    * On laptops and desktops, the user should be provided with feedback when hovering over social media links/icons as the text color changes to a lighter shade of grey.
+    * The footer should be located at the bottom of the page and contain copyright text, aligned centrally.
+    * The footer text should have good contrast with the background image.
 
   * Testing
     * The footer was tested for responsiveness on various screen sizes and devices using Chrome DevTools.
-    * It was verified that the social media links/icons changed color by hovering over them with the cursor.
-    * All social media links/icons were clicked on to ensure that they opened the relevant link in a new tab.
-    * Testing was carried out across various devices and screen widths to ensure that the social media links/icons and copyright text remained horizontally aligned to the center of the page.
+    * It was verified that the footer text maintained good contrast with the background image.
+    * Testing was carried out across various devices and screen widths to ensure that the footer text remained horizontally aligned to the center of the page.
       <details><summary>Footer Testing</summary>
-        <img src="readme-files/images/footer-testing.gif">
+        <img src="">
       </details>
 
   * Result
-    * The footer responded as expected in all of the above testing.
-    * All content was horizontally aligned to the center of the page and reactive to various devices and screen sizes.
-    * On laptops and desktops, the social media links/icons changed color upon hovering over them with the cursor.
-    * All social media links/icons opened the relevant link in a new tab.
-        
-&nbsp;
-
-### My Work Page
-
-  * Expected
-    * The heading and text on the my work section should be black with a white background and sit directly under the navbar.
-    * The images should display directly underneath their relevant subheadings and text.
-    * All images should be displayed in a single row on devices with a screen width of greater than 1199px. On devices with a screen width of between 1199px and 768px, the images drop down onto a second line. On devices with a screen width smaller than 768px the images display in a single column one on top of the other.
-
-  * Testing
-    * The my work section was tested for responsiveness on various screen sizes and devices using Chrome DevTools.
-    * Testing was carried out across various devices and screen widths to ensure that the images reacted as expected, displaying in rows of three, two, and a single column depending on screen width, and that headings and text remained horizontally aligned to the center of the page.
-      <details><summary>My Work Section Testing</summary>
-        <img src="readme-files/images/my-work-testing.gif">
-      </details>
-
-  * Result
-    * The my work section responded as expected in all of the above testing.
-    * All content was horizontally aligned to the center of the page and reactive to various devices and screen sizes.
-    * All images reacted as expected, displaying in rows of three, two, and a single column depending on screen width.
-
-&nbsp;
-
-### Gallery
-
-  * Expected
-    * The heading on the gallery section should be black with a white background and sit directly under the navbar.
-    * All content should be horizontally aligned to the center of the page and be reactive to various devices and screen sizes.
-    * The gallery images should be displayed in rows of three on devices with a screen width of greater than 1199px. On devices with a screen width of between 1199px and 768px, the images are displayed in rows of two. On devices with a screen width smaller than 768px the images display in a single column one on top of the other.
-
-
-  * Testing
-    * The gallery section was tested for responsiveness on various screen sizes and devices using Chrome DevTools.
-    * Various devices and screen widths were simulated to ensure that the gallery images reacted as expected, displaying in rows of three, two, and a single column depending on screen width, and that the heading remained horizontally aligned to the center of the page.
-      <details><summary>Gallery Section Testing</summary>
-        <img src="readme-files/images/gallery-testing.gif">
-      </details>
-
-  * Result
-    * The gallery section responded as expected in all of the above testing.
-    * All content was horizontally aligned to the center of the page and reactive to various devices and screen sizes.
-    * Gallery images reacted as expected, displaying in rows of three, two, and a single column depending on screen width. 
-
-&nbsp;
-
-### Contact Me
-
-  * Expected
-    * The heading and text on the contact me section should be black with a white background and sit directly under the navbar.
-    * The contact form should consist of three text boxes (Name, Email & Project Description) and a submit/send button. The background image should provide sufficient contrast and not interfere with the visibility of the heading and form elements.
-    * All text boxes should contain placeholder text stating what their content should be and provide feedback if a submission attempt is made by a user who has not entered text in all three; the email box should only accept submissions containing the '@' symbol. 
-    * All content should be horizontally aligned to the center of the page and be reactive to various devices and screen sizes.
-    * On laptops and desktops, the user should be provided with feedback when hovering over the submit/send button as the color changes to a darker shade of grey.
-
-  * Testing
-    * The contact me section was tested for responsiveness on various screen sizes and devices using Chrome DevTools.
-    * Attempts were made to submit incomplete and partially complete forms, as well as submissions that did not contain a '@' symbol in the email field, to verify that the form would only accept a completed form with the relevant fields completed correctly.
-    * It was also verified that the submit/send button changed color by hovering over it with the cursor.
-    * The background was checked in both portrait and landscape orientations on mobile devices to ensure that it did not interfere with the visibility of the heading and form elements.
-      <details><summary>Contact Me Section Testing</summary>
-        <img src="readme-files/images/contact-me-testing.gif">
-      </details>
-
-  * Result
-    * The contact me section responded as expected in all of the above testing.
-    * All content was horizontally aligned to the center of the page and reactive to various devices and screen sizes.
-    * The form could not be submitted until all text fields had been complete and feedback was provided if a text field was empty; the email field only accepted submissions containing a '@' symbol and provided feedback when this was lacking.
-    * On laptops and desktops, the submit/send button changed color upon hovering over it with the cursor.
-    * The background image provided sufficient contrast and did not interfere with the visibility of the heading and form elements.
-
-&nbsp;
-
-### Back to Top Button
-
-  * Expected
-    * The back to top button should be found in the bottom right corner of the page and bring the user back to the top of the page when clicked on.
-    * The back to top button should be unintrusive and semi transparent.
-    * On laptops and desktops, the user should be provided with feedback when hovering over the back to top button as the color changes to a darker shade of grey.
-
-  * Testing
-    * The back to top button was tested by scrolling down on all site pages and clicking on it to return to the top of the page; Chrome DevTools was used to simulate mobile devices.
-    * It was also verified that the back to top button changed color by hovering over it with the cursor.
-      <details><summary>Back to Top Button Testing</summary>
-        <img src="readme-files/images/back-to-top-testing.gif">
-      </details>
-
-  * Result
-    * The back to top button responded as expected in all of the above testing.
-    * The back to top button was present and brought the user back to the top of the page on all pages, screen sizes and devices. 
-    * On laptops and desktops, the back to top button changed color upon hovering over it with the cursor.
+    * The footer is located at the bottom of the page and contains the copyright text.
+    * The footer text has good contrast is horizontally aligned to the center of the page on all devices and screen sizes.
 
 &nbsp;
 

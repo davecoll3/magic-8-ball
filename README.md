@@ -96,7 +96,7 @@ Research for the creation of this site was carried out by searching for various 
 
 ## Design
 
-### Imagery
+### Imagery
 * An image of the Orion Nebula was used to create a visual link to mysticism that is intrinsically conected to space and space iconography. It has a vibrant, colourful aesthetic that is visually appealing. 
 
 ### Color Scheme
@@ -226,8 +226,7 @@ Testing information can be found in the [testing file][TESTING.md].
 # Validation
 
 ## HTML
-The [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to validate the code.
-The site was successfully validated with no errors or warnings.
+The [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to validate the code. The code was successfully validated with no errors or warnings.
 
 <details><summary>HTML Validation</summary>
 <img src="readme-files/images/w3c-html.png" alt="Validation of website html code">
@@ -245,6 +244,15 @@ No errors were found but four warnings were highlighted; as these related to the
 
 <details><summary>CSS Warnings</summary>
 <img src="readme-files/images/w3c-css-warnings.png" alt="CSS validation warnings">
+</details>
+
+&nbsp;
+
+## JavaScript
+[JSHint](https://jshint.com/) was used to check if JavaScript source code complies with coding rules. The code was successfully validated with no errors or warnings.
+
+<details><summary>JavaScript Validation</summary>
+<img src="readme-files/images/jshint.png" alt="Validation of website JavaScript code">
 </details>
 
 &nbsp;
@@ -323,15 +331,21 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
   * The favicon icon image is from the open socurce project [Twemoji](https://twemoji.twitter.com/) and was obtained from [favicon.io](https://favicon.io/emoji-favicons/pool-8-ball/). It is licensed for use under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
   * The Orion Nebula image, used as the background image, was obtained from [Pixbay](https://pixabay.com/photos/orion-nebula-emission-nebula-11107/) and was freely used under the [Pixbay license](https://pixabay.com/service/terms/). 
+
 ## Code
 
-  * The CSS code for the shading around the Magic 8 Ball was adapted from the [Coder's Block](https://codersblock.com/) article [Creating Glow Effects with CSS](https://codersblock.com/blog/creating-glow-effects-with-css/).
-  * The CSS code for the Magic 8 Ball animation was adapted from the [Email on Acid](https://www.emailonacid.com/) article [How to Build an Interactive Magic 8 Ball for Email](https://www.emailonacid.com/blog/article/email-development/how-to-build-an-interactive-magic-8-ball-for-email/).
+  * The CSS code for the shading around the Magic 8 Ball was adapted from the Coder's Block article ["Creating Glow Effects with CSS"](https://codersblock.com/blog/creating-glow-effects-with-css/).
+  * The CSS code for the Magic 8 Ball animation was adapted from the Email on Acid article ["How to Build an Interactive Magic 8 Ball for Email"](https://www.emailonacid.com/blog/article/email-development/how-to-build-an-interactive-magic-8-ball-for-email/).
 
 Varoious online tutorials were consulted to help better understand the methodadology needed to create this site. These include the following:
   * [HTML, CSS, & Javascript: I Created A Magic 8 Ball](https://www.youtube.com/watch?v=SAbd3vn9m0s&ab_channel=SmartTechTip) by Smart Tech Tip.
   * [Magic Eight Ball](https://www.youtube.com/watch?v=1pw7D7GNLNM&ab_channel=CaryRiina) by Cary Riina.
   * [Build Magic 8 ball App | HTML | CSS | Javascript](https://www.youtube.com/watch?v=k3ZLSWQB9AU&ab_channel=AadeshKulkarni) by Aadesh Kulkarni.
+
+## Acknowledgements
+
+  * I would like to thank both mentors who assisted me on this project, Oluwaseun Owonikoko and Rohit Sharma.
+  * I would also like to acknowledge the support and advice obtained from the Code Institute Slack community. 
 
   &nbsp;
 
