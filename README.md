@@ -237,7 +237,7 @@ The site was successfully validated with no errors or warnings.
 
 ## CSS
 The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_uri) was used to validate the code.
-No errors were found but four warnings were highlighted; as these related to the imported google fonts stylesheet and prefixes relating to different browsers, they are not of concern.
+No errors were found but four warnings were highlighted; as these related to the imported google fonts stylesheet and vendor extensions, they are not of any concern.
 
 <details><summary>CSS Validation</summary>
 <img src="readme-files/images/w3c-css.png" alt="Validation of website CSS>
@@ -253,27 +253,9 @@ No errors were found but four warnings were highlighted; as these related to the
 The color contrast accessibility validator [a11y](https://color.a11y.com/) was used to verify that the colour contrast across the site adhered to the [WCAG 2.1 Guidelines](https://www.w3.org/TR/WCAG21/).
 
 <details>
-<summary>Homepage</summary>
+<summary>Color Contrast Validation</summary>
 
-![Index Page](/readme-files/images/index-contrast-validation.png)
-</details>
-
-<details>
-<summary>My Work Page</summary>
-
-![My Work Page](/readme-files/images/my-work-contrast-validation.png)
-</details>
-
-<details>
-<summary>Gallery Page</summary>
-
-![Gallery Page](/readme-files/images/gallery-contrast-validation.png)
-</details>
-
-<details>
-<summary>Contact Me Page</summary>
-
-![Contact Me Page](/readme-files/images/contact-me-contrast-validation.png)
+![Color Contrast Validation](/readme-files/images/a11l-color-contrast.png)
 </details>
 
 &nbsp;
@@ -335,16 +317,21 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## Content 
 
-  * The icons in the footer and back to top button were taken from [Font Awesome](https://fontawesome.com/)
   * The Code Institute readme-template provided the basic structure for the readme.md file.
 
 ## Media
 
-  * All of the images used across the site are original creations of Marine Wong Kwok Chuen and were used with her permission.
-
+  * The favicon icon image is from the open socurce project [Twemoji](https://twemoji.twitter.com/) and was obtained from [favicon.io](https://favicon.io/emoji-favicons/pool-8-ball/). It is licensed for use under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+  * The Orion Nebula image, used as the background image, was obtained from [Pixbay](https://pixabay.com/photos/orion-nebula-emission-nebula-11107/) and was freely used under the [Pixbay license](https://pixabay.com/service/terms/). 
 ## Code
 
-  * The CSS code for the gallery was taken from the LogRocket article [How to create a responsive image gallery with CSS flexbox](https://blog.logrocket.com/how-create-responsive-image-gallery-css-flexbox/) and is fully credited in the stylesheet.
+  * The CSS code for the shading around the Magic 8 Ball was adapted from the [Coder's Block](https://codersblock.com/) article [Creating Glow Effects with CSS](https://codersblock.com/blog/creating-glow-effects-with-css/).
+  * The CSS code for the Magic 8 Ball animation was adapted from the [Email on Acid](https://www.emailonacid.com/) article [How to Build an Interactive Magic 8 Ball for Email](https://www.emailonacid.com/blog/article/email-development/how-to-build-an-interactive-magic-8-ball-for-email/).
+
+Varoious online tutorials were consulted to help better understand the methodadology needed to create this site. These include the following:
+  * [HTML, CSS, & Javascript: I Created A Magic 8 Ball](https://www.youtube.com/watch?v=SAbd3vn9m0s&ab_channel=SmartTechTip) by Smart Tech Tip.
+  * [Magic Eight Ball](https://www.youtube.com/watch?v=1pw7D7GNLNM&ab_channel=CaryRiina) by Cary Riina.
+  * [Build Magic 8 ball App | HTML | CSS | Javascript](https://www.youtube.com/watch?v=k3ZLSWQB9AU&ab_channel=AadeshKulkarni) by Aadesh Kulkarni.
 
   &nbsp;
 
