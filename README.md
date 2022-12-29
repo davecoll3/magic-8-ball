@@ -2,7 +2,7 @@
 
 The Magic 8 Ball is used for fortune telling or seeking advice. This is a fun website where users can ask a question and receive a response that affirms or rejects their query; it can also provide a neutral response.
 
-The primary technologies used to form the basis of this website are the coding languages HTML5, CSS3 and JavaScript ES6 which were complemented by use of the Bootstrap framework.
+The primary technologies used to form the basis of this website are the coding languages HTML, CSS and JavaScript which were complemented by use of the Bootstrap framework.
 
 [View the live site here](https://davecoll3.github.io/magic-8-ball/)
 
@@ -101,7 +101,7 @@ Research for the creation of this site was carried out by searching for various 
 
 ### Color Scheme
 
-* Black and white colours were used on the Eight Ball as is traditional and white text was used to provide good contrast; adhering to the WCAG 2.1 contrast guidelines. Magenta, cyan, and white was used to help blend the Eight Ball into the background image. In keeping with this theme, various shades of purple were used on the "Shake!" button and on the back area of the Eight Ball itself to provide some shading and make it seem less two dimensional.
+* Black and white colours were used on the Eight Ball as is traditional. White, black and grey text was used across the site to provide good contrast; adhering to the WCAG 2.1 contrast guidelines. Magenta, cyan, and white was used to help blend the Eight Ball into the background image. In keeping with this theme, various shades of purple were used on the "Shake!" button and on the back area of the Eight Ball itself to provide some shading and make it seem less two dimensional.
 
 ### Fonts
 
@@ -118,11 +118,11 @@ Research for the creation of this site was carried out by searching for various 
 * Balsamiq Wireframes was used to create the wireframes for this site. 
 Wireframes for mobile, tablet, and desktop can be found below:
 
-  ### [Mobile Wireframe](/readme-files/wireframes/mobile-device.pdf)
+  ### [Mobile Wireframe](/readme-files/wireframes/mobile-wireframes.pdf)
 
-  ### [Tablet Wireframe](/readme-files/wireframes/tablet.pdf)
+  ### [Tablet Wireframe](/readme-files/wireframes/tablet-wireframes.pdf)
 
-  ### [Desktop Wireframe](/readme-files/wireframes/desktop.pdf)
+  ### [Desktop Wireframe](/readme-files/wireframes/desktop-wireframes.pdf)
 
 &nbsp;
 
@@ -132,66 +132,50 @@ Wireframes for mobile, tablet, and desktop can be found below:
 
 ## Existing Features
 
-* Navigation Bar
+* Header
 
-  * Featured on all four pages, the full responsive navigation bar includes links to the Home, My Work, Gallery and Sign Up pages and is identical on each page to allow for easy navigation.
-  * This section will allow the user to easily navigate from page to page across all devices without having to revert back to the previous page via the ‘back’ button. 
-  * The user's current location is indicated by white text in the menu list items with the other items in a muted shade of grey; menu items are also highlighted when hovering over them, adding a responsive element.
-  * The navigation menu will collapse into a burger icon on mobile screens allowing for a more user friendly and aesthetically pleasing experience.
+  * The header containes a h1 element, with the name of the game, which is followed by a line of text that provides a simple and concise instruction on how it works.
 
-    ![Nav Bar](/readme-files/images/nav-bar.png)
+    ![Header](/readme-files/images/header.png)
 
-* Callout Banner
+* 8 Ball
 
-  * The callout banner serves to introduce the user to the site owner with an eye catching avatar and background image used to grab their attention.  
+  * The Eight Ball itself is in traditional black and white colors with shades of magenta, cyan, and white was used to help blend it into the background image. Some purple shading was added to the back area of the Eight Ball to provide some shading and make it seem less two dimensional.
 
-    ![Landing Page](/readme-files/images/callout-banner.png)
+    ![8 Ball](/readme-files/images/eight-ball.png)
 
-* About Me Section
+* 8 Ball Animation
 
-  * The about me section will further introduce the user to the site owner, informing them of their skills and education background. 
+  * Once a valid question has been submitted by the user, a short 1 second animation is triggered which shakes the Eight Ball from side to side; as was traditionally done with the physical Eight Ball toy in order to obtain an answer to the users question.
 
-    ![About Me](/readme-files/images/about-me.png)
+    ![8 Ball Animation](/readme-files/images/animation.gif)
 
-* The Footer
+* User input
 
-  * The footer section includes links to the relevant social media sites for the site owner; all links open to a new tab to allow easy navigation for the user.     
-  * The footer is valuable to the user as it encourages them to keep connected via social media.
-  * There is also copyright information contained in the footer to remind the user that the site's content is not licence free.
+  * The user input section consists of a text input and a button. The text input contains placehoder text which propts the user to enter their question while the botton is used to submit their question; a enter key press can also be used to submit a question.
+
+    ![User Input](/readme-files/images/user-input.png)
+
+* Error Message
+
+  * Should a user fail to write a question, an error message is displayed underneath the button which prompts them to ask a question.
+
+    ![Error Message](/readme-files/images/error-msg.png)
+
+* Footer
+
+  * The footer consists of copyright information for the site and game.
 
     ![Footer](/readme-files/images/footer.png)
 
-* The My Work Page
-
-  * This page will allow the user to see some examples of the work already created by the site owner by describing and showcasing a varied selection of their work.
-
-    ![My Work](/readme-files/images/my-work.png)
-
-* Gallery
-
-  * The gallery will provide the user with a variety of original illustrations created by the site owner.
-  * This section is valuable to the user as it provides a clear representation of the various illustration styles used by the site owner. 
-
-    ![Gallery](/readme-files/images/gallery.png)
-
-* Contact Me
-
-  * The contact me page will provide a form for the user to submit a message in order to make enquiries or request a commission. 
-  * The user will be asked to submit their name, email address and a message describing their proposal. 
-
-    ![Contact Me](/readme-files/images/contact-me.png)
-
-* Back to Top Button
-
-  * A floating back to top button was used to allow the user an easy means of returning to the nav bar, this is especially important for mobile devices where the content is stretched vertically.
-
-     ![Back to Top Button](/readme-files/images/back-to-top-btn.png)
 
 ## Features to be Implemented in Future
 
-  * Adding an isotope filter to the gallery page once I have a better understanding of JavaScript. This will allow users to more easily view illustrations that share a common theme or style.
-  * Additionally, I would like to use JavaScript to better control the positioning of the back to top button; having it fade in as you scroll down the page.
-  * An extra shop page that allows users to purchase items such as prints, cards and badges directly from the owner. 
+  * ????????
+  * ????????
+  * ????????
+  * ????????
+  * ????????
 
 &nbsp;
 
@@ -200,15 +184,14 @@ Wireframes for mobile, tablet, and desktop can be found below:
 # Technologies Used
 
 ## Languages
-  * [HTML5](https://en.wikipedia.org/wiki/HTML5)
-  * [CSS3](https://en.wikipedia.org/wiki/CSS)
+  * [HTML](https://en.wikipedia.org/wiki/HTML)
+  * [CSS](https://en.wikipedia.org/wiki/CSS)
+  * [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ## Frameworks and Libraries
 
-  * [Bootstrap](https://getbootstrap.com/docs/4.1/getting-started/introduction/)
-    * Bootstrap v4.1.3 was used to help style and implement Java elements to the site, namely on the nav bar. 
-  * [Font Awesome](https://fontawesome.com/)
-    * The Font Awesome v6.1.2 library was used to supply the social media icons, on the site footer, and the chevron icon used for the back to top button.
+  * [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
+    * Bootstrap v5.2.3 was used to form the user input section of the site, namely to provide the text input and button elements.
   * [Google Fonts](https://fonts.google.com/)
     * Google Fonts was used to import the 'Barlow' font used throughout the site.
 
@@ -218,7 +201,9 @@ Wireframes for mobile, tablet, and desktop can be found below:
   * [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
     * The W3C Markup Validation Service was used to check the markup validity of the html code. 
   * [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_by_uri)
-    * The W3C CSS Validation Service was used to validate the css code. 
+    * The W3C CSS Validation Service was used to validate the css code.
+  * [JSHint](https://jshint.com/)
+    * The JSHint static code analysis tool was used to check if the JavaScript source code complies with coding rules. 
   * [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/)
     * Lighthouse was used to audit performance, accessibility, best practices and SEO across the website.
   * [a11y](https://color.a11y.com/)
@@ -242,22 +227,10 @@ Testing information can be found in the [testing file][TESTING.md].
 
 ## HTML
 The [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input) was used to validate the code.
-All pages were successfully validated with no errors or warnings.
+The site was successfully validated with no errors or warnings.
 
-<details><summary>Home</summary>
-<img src="readme-files/images/w3c-index.png" alt="Validation of Home page">
-</details>
-
-<details><summary>My Work</summary>
-<img src="readme-files/images/w3c-my-work.png" alt="Validation of My Work page">
-</details>
-
-<details><summary>Gallery</summary>
-<img src="readme-files/images/w3c-gallery.png" alt="Validation of Gallery page">
-</details>
-
-<details><summary>Contact Me</summary>
-<img src="readme-files/images/w3c-contact-me.png" alt="Validation of Contact Me page">
+<details><summary>HTML Validation</summary>
+<img src="readme-files/images/w3c-html.png" alt="Validation of website html code">
 </details>
 
 &nbsp;
@@ -267,7 +240,7 @@ The [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/#validate_b
 No errors were found but four warnings were highlighted; as these related to the imported google fonts stylesheet and prefixes relating to different browsers, they are not of concern.
 
 <details><summary>CSS Validation</summary>
-<img src="readme-files/images/w3c-css.png" alt="Validation of CSS>
+<img src="readme-files/images/w3c-css.png" alt="Validation of website CSS>
 </details>
 
 <details><summary>CSS Warnings</summary>
