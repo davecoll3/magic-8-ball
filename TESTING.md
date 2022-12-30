@@ -14,7 +14,7 @@
   * On devices with a screen width of 768px or smaller, the font size of the h1 and p elements should reduce; reducing further at the screen width (screen height for landscape orientation) break points of 480px and 339px. 
 
 * Testing
-  * The header was tested on a laptop with a screen width of greater than 768px in order to verify that the font size and text/background contrast was sufficent. 
+  * The header was tested on a laptop with a screen width of greater than 768px in order to verify that the font size and text/background contrast was sufficient. 
   * Chrome DevTools was used to simulate mobile devices and to check for reactiveness.
     <details><summary>Header Testing</summary>
       <img src="readme-files/images/testing-header.gif">
@@ -31,21 +31,21 @@
 
   * Expected
     * The 8 Ball should be located centrally below the header and consist of an outer black circle and an inner white circle. The holding text should be a black number "8". 
-    * A glow effect should be visable around the outer edge of the black circle which blends well with the background image.
+    * A glow effect should be visible around the outer edge of the black circle which blends well with the background image.
     * On devices with a screen width of 768px or smaller, the 8 ball, and text within, should reduce in size; reducing further at the screen width (screen height for landscape orientation) break points of 480px and 339px. 
 
   * Testing
-    * The 8 Ball was tested on a laptop with a screen width of greater than 768px in order to verify that the size and contrast with the background image was sufficent. 
+    * The 8 Ball was tested on a laptop with a screen width of greater than 768px in order to verify that the size and contrast with the background image was sufficient. 
     * Chrome DevTools was used to simulate mobile devices and to check for reactiveness.
-    * The 8 Ball was checked in both portrait and landscape orientations on mobile devices to ensure that it continued to function sufficently well.
+    * The 8 Ball was checked in both portrait and landscape orientations on mobile devices to ensure that it continued to function sufficiently well.
       <details><summary>8 Ball Testing</summary>
         <img src="readme-files/images/testing-8-ball.gif">
       </details>
 
   * Result
     * The 8 Ball responded as expected in all of the above testing.
-    * All content was horizontally aligned to the center of the page and reactive to various devices and screen sizes.
-    * A glow effect is visable around the outer edge of the black circle and blends well with the background image.
+    * All content was horizontally aligned to the centre of the page and reactive to various devices and screen sizes.
+    * A glow effect is visible around the outer edge of the black circle and blends well with the background image.
     * The 8 Ball functions well on mobile devices in both portrait and landscape orientation.
 
 &nbsp;
@@ -54,19 +54,19 @@
 
   * Expected
     * When a user submits a valid question, using either the enter key or "Shake!" button, a 1 second animation should shake the 8 Ball from side-to-side.
-    * When the animation has ended, an answer should be displayed, at the center of the 8 ball, for 2 seconds.
+    * When the animation has ended, an answer should be displayed, at the centre of the 8 ball, for 2 seconds.
     * The 8 Ball should then return to its default state.  
 
   * Testing
     * A valid question was submitted to trigger the 8 ball.
-    * The 8 Ball animation was checked in both portrait and landscape orientations on mobile devices to ensure that it continued to function sufficently well.
+    * The 8 Ball animation was checked in both portrait and landscape orientations on mobile devices to ensure that it continued to function sufficiently well.
       <details><summary>8 Ball Animation Testing</summary>
         <img src="readme-files/images/testing-animation.gif">
       </details>
 
   * Result
     * When a valid question was submitted, the 8 Ball animation began as expected, lasting 1 second.
-    * After the animation, an answer was displayed, at the center of the 8 Ball, for 2 seconds.
+    * After the animation, an answer was displayed, at the centre of the 8 Ball, for 2 seconds.
     * The 8 Ball then returned to its default state.
     * The 8 Ball animation functions well on mobile devices in both portrait and landscape orientation.
 
@@ -79,12 +79,12 @@
     * Placeholder text should be displayed, within the text input, prompting the user to submit a question.
     * The "Shake!" button should provide feedback when the user hovers over it or clicks on it, when used on a desktop device..
     * It should be possible to submit a valid question by either an 'enter' key press or by clicking on the "Shake!" button.
-    * Once a valid question has been submitted, it should not be possible to submit a subsequent question until after the 8 Ball animation, and dispying of the answer text, has ended.
-    * When the 8 Ball animation and dispying of the answer text have ended, the text input field should be cleared of the previous question.
+    * Once a valid question has been submitted, it should not be possible to submit a subsequent question until after the 8 Ball animation, and displaying of the answer text, has ended.
+    * When the 8 Ball animation and displaying of the answer text have ended, the text input field should be cleared of the previous question.
 
   * Testing
     * A valid question was submitted using first the 'enter' key and subsequently by clicking on the "Shake!" button.
-    * Attempts to resubmit a question were made while the 8 Ball animation was running and answer was being displayed.
+    * Attempts to resubmit a question were made while the 8 Ball animation was running and also when the answer was being displayed.
     * The "Shake!" button was checked for feedback upon hover over and click events, when used on a desktop device.
       <details><summary>User Input Testing</summary>
         <img src="readme-files/images/testing-user-input.gif">
@@ -94,8 +94,8 @@
     * Placeholder text is displayed, within the text input, prompting the user to submit a question.
     * The "Shake!" button provides feedback when the user hovers over it or clicks on it, when used on a desktop device..
     * A valid question can be submitted by either an 'enter' key press or by clicking on the "Shake!" button. 
-    * When a valid question is submitted, it is not be possible to submit a subsequent question until after the 8 Ball animation, and dispying of the answer text, has ended.
-    * When the 8 Ball animation and dispying of the answer text end, the text input field is cleared of the previous question.
+    * When a valid question is submitted, it is not possible to submit a subsequent question until after the 8 Ball animation, and displaying of the answer text, has ended.
+    * When the 8 Ball animation and displaying of the answer text ends, the text input field is cleared of the previous question.
         
 &nbsp;
 
@@ -107,15 +107,15 @@
 
   * Testing
     * Multiple attempts were made to submit an empty text input field using both the 'enter' key and by clicking on the "Shake!" button.
-    * Testing was carried out across various devices and screen widths to ensure that the error message appeared as expected and that the text remained horizontally aligned to the center of the page while maintaining good contrast with the background image.
+    * Testing was carried out across various devices and screen widths to ensure that the error message appeared as expected and that the text remained horizontally aligned to the centre of the page while maintaining good contrast with the background image.
       <details><summary>Error Message Testing</summary>
         <img src="readme-files/images/testing-error-msg.gif">
       </details>
 
   * Result
-    * When a user attempted to submit a question, without typing anything into the text input field, an error message appears below the "Shake!" button, prompting them to ask a question.
+    * When a user attempts to submit a question, without typing anything into the text input field, an error message appears below the "Shake!" button, prompting them to ask a question.
     * The error message disappears after 1.5 seconds.
-    * The error message appears as expected, on all devices and screen sizes, and the text remains horizontally aligned to the center of the page while maintaining good contrast with the background image.
+    * The error message appears as expected, on all devices and screen sizes, and the text remains horizontally aligned to the centre of the page while maintaining good contrast with the background image.
 
 &nbsp;
 
@@ -128,14 +128,14 @@
   * Testing
     * The footer was tested for responsiveness on various screen sizes and devices using Chrome DevTools.
     * It was verified that the footer text maintained good contrast with the background image.
-    * Testing was carried out across various devices and screen widths to ensure that the footer text remained horizontally aligned to the center of the page.
+    * Testing was carried out across various devices and screen widths to ensure that the footer text remained horizontally aligned to the centre of the page.
       <details><summary>Footer Testing</summary>
         <img src="readme-files/images/testing-footer.gif">
       </details>
 
   * Result
     * The footer is located at the bottom of the page and contains the copyright text.
-    * The footer text has good contrast is horizontally aligned to the center of the page on all devices and screen sizes.
+    * The footer text has good contrast and is horizontally aligned to the centre of the page on all devices and screen sizes.
 
 &nbsp;
 
@@ -216,95 +216,116 @@
 
 ## Bugs
 
-### Navbar/Hamburger Menu
-  During testing of the navigation bar, it was noted that while the navigation menu collapsed into a hamburger menu, on mobile devices, it was not displaying the drop-down menu upon clicking. After much troubleshooting it was discovered that the lack of bootstrap JavaScript links was the cause of this issue. Once the requisite links were included, as shown below, the hamburger drop-down menu responded as expected.
-
+### Scrolling
+  During testing, it was noted that when on a mobile device, in landscape orientation, while there was content below the fold, it was not possible to scroll down to view it and it was only accessible with the use of the tab key. It was eventually discovered that an overflow: hidden (as below) property had been added to the body element which was causing this issue. Removing the overflow property resolved the issue.
+  
   ```
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"
-  ></script>
-
-  <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"
-  ></script>
-
-  <script
-    src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"
-  ></script>
-  ```
-
-  <details><summary>Navbar Bug Screenshot</summary>
-  <img src="readme-files/images/navbar-bug.gif">
-  </details>
-
-  &nbsp;
-
-### Callout Avatar/Headings
-  When positioning the avatar image and headings within the callout banner, the contrast with the background image was taken into consideration; as when the bottom of the image overlaps with the heading, it causes contrast issues. Additionally, the background image was set to occupy the entire viewport. The positioning was initially set using absolute units, however, during testing it was noted that when a mobile device was changed from portrait to landscape orientation, it caused an overlap and made the headings difficult to read. After much trial and error, the relative units, as shown below, were used allowing the avatar image and headings to be responsive to all viewport sizes and orientations while maintaining good contrast with the background image.
-
-  ```
-  .callout {
-    background-color: transparent;
+  body {
+    font-family: 'Nunito', sans-serif;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding-top: 6vmin;
+    text-align: center;
+    overflow: hidden;
+    color: #fff;
   }
 
-  .avatar {
-    width: 40vmin;
-    height: 40vmin;
-    border-radius: 50%;
-    margin-bottom: 2vmin;
-  }
-
-  .callout hr {
-    background-color: #fff;
-    margin: 1.25vmin;
-  }
-
-  ...
-
-  #callout-main-heading {
-    font-size: 7vmin;
-    font-weight: 700;
-    margin: 1vmin;
-  }
-
-  #callout-sub-heading {
-    font-size: 5vmin;
-    font-weight: 500;
-    margin: 1vmin;
-  }
   ```
 
-  <details><summary>Callout Bug Screenshot</summary>
-  <img src="readme-files/images/callout-bug.gif">
+  <details><summary>Scrolling Bug Screenshot (the visible scroll was achieved with use of the tab key)</summary>
+  <img src="readme-files/images/bug-scrolling.gif">
   </details>
 
   &nbsp;
 
-### Footer Social Media Links
-  When testing the social media links in the footer, it was noted that small black dots were appearing between the social media icons upon hover over. After unsuccessfully troubleshooting this problem, a post was placed on the slack project-milestone-1 page where user jo_ci highlighted that it was being caused by the < a > element. This element was targeted, as shown below, which resolved the issue. 
+### Background Image
+  During testing, it was noted that when on a mobile device, in landscape orientation, the background image was not covering the entirety of the background. After some trial and error, it was found that by removing the 'no-repeat' property from the below CSS code resolved this issue.
+  
+  ```
+body {
+  background: url("../images/8-ball-background.webp") no-repeat bottom center;
+}
+  ```
+
+  <details><summary>Background Image Bug Screenshot</summary>
+  <img src="readme-files/images/bug-background.png">
+  </details>
+
+  &nbsp;
+
+### Footer
+  The placement of the footer element was initially controlled by the addition of the Bootstrap utility class of 'fixed-bottom' which worked well. However, during testing, it was discovered that when on a mobile device, in landscape mode, the footer was blocking content and would be better positioned if it were flushed to the bottom of the page. Having tried several different methods to obtain the desired positioning, it was finally achieved using flexbox which was already being implemented on the site. Namely, flex-grow: 1 was added to the main element and flex-grow: 0 to the footer element (as below). 
 
   ```
-  .social-networks a:hover {
-  text-decoration: none;
+  body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    }
+
+  .page-content {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  main {
+    flex-grow: 1;
+  }
+
+  .copyright {
+    flex-shrink: 0;
+    text-align: center;
+    margin: 8px;
+    color: #DCDCDC;
   }
   ```
 
   <details><summary>Footer Bug Screenshot</summary>
-  <img src="readme-files/images/footer-bug.gif">
+  <img src="readme-files/images/bug-footer.png">
   </details>
 
 &nbsp;
+
+  ### 'Shake!' Button
+  When testing the game element it was discovered that, when a question was submitted by the user, it was possible to resubmit subsequent questions before the 8 Ball had completed its animation and displaying of the answer. This was due to the 'Shake!' button being continually active and was resolved by altering the JavaScript by adding "button.disabled = true;" to the validateQuestion function (as below). 
+
+  ```
+  function validateQuestion() {
+    if (question.value == "") {
+      errorMessage.classList.remove('error-message-display');
+      setTimeout(errorTimeOut, 1500);
+      return false;
+    } else {
+      ballBlack.classList.add('animate');
+      button.disabled = true;
+      setTimeout(animationTimeOut, 1000);
+    }
+  }
+  ```
+  
+  Additionally, 'question.value = '';' was added to the answerTimeOut function to clear the text input field and prevent the user from instantly submitting the same question a second time.
+
+  ```
+  function answerTimeOut() {
+    answer.textContent = '8';
+    answer.classList.remove('answer-text');
+    answer.classList.add('holding-text');
+    question.value = '';
+    button.disabled = false;
+  }
+  ```
+
+  <details><summary>'Shake!' Button Bug Screenshot</summary>
+  <img src="readme-files/images/bug-shake.gif">
+  </details>
+
+  &nbsp;
 
 [Back to top &uarr;](#testing)
 

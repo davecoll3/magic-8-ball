@@ -97,15 +97,15 @@ Research for the creation of this site was carried out by searching for various 
 ## Design
 
 ### Imagery
-* An image of the Orion Nebula was used to create a visual link to mysticism that is intrinsically conected to space and space iconography. It has a vibrant, colourful aesthetic that is visually appealing. 
+* An image of the Orion Nebula was used to create a visual link to mysticism that is intrinsically connected to space and space iconography. It has a vibrant, colourful aesthetic that is visually appealing. 
 
 ### Color Scheme
 
-* Black and white colours were used on the Eight Ball as is traditional. White, black and grey text was used across the site to provide good contrast; adhering to the WCAG 2.1 contrast guidelines. Magenta, cyan, and white was used to help blend the Eight Ball into the background image. In keeping with this theme, various shades of purple were used on the "Shake!" button and on the back area of the Eight Ball itself to provide some shading and make it seem less two dimensional.
+* Black and white colours were used on the Eight Ball as is traditional. White, black and grey text was used across the site to provide good contrast; adhering to the WCAG 2.1 contrast guidelines. Magenta, cyan, and white were used to help blend the Eight Ball into the background image. In keeping with this theme, various shades of purple were used on the "Shake!" button and on the back area of the Eight Ball itself to provide some shading and make it seem less two dimensional.
 
 ### Fonts
 
-* The Google font of Nunito was chosen as it is a well balanced typeface with a slightly rounded edge which fits in with the overall look of the site, providing good definition without detracting form the imagary.
+* The Google font of Nunito was chosen as it is a well balanced typeface with a slightly rounded edge which fits in with the overall look of the site, providing good definition without detracting from the imagery.
 
 ### Structure
 
@@ -134,7 +134,7 @@ Wireframes for mobile, tablet, and desktop can be found below:
 
 * Header
 
-  * The header containes a h1 element, with the name of the game, which is followed by a line of text that provides a simple and concise instruction on how it works.
+  * The header contains a h1 element, with the name of the game, which is followed by a line of text that provides a simple and concise instruction on how it works.
 
     ![Header](/readme-files/images/header.png)
 
@@ -152,7 +152,7 @@ Wireframes for mobile, tablet, and desktop can be found below:
 
 * User input
 
-  * The user input section consists of a text input and a button. The text input contains placehoder text which propts the user to enter their question while the botton is used to submit their question; a enter key press can also be used to submit a question.
+  * The user input section consists of a text input and a button. The text input contains placeholder text which prompts the user to enter their question while the button is used to submit their question; an enter key press can also be used to submit a question.
 
     ![User Input](/readme-files/images/user-input.png)
 
@@ -329,15 +329,15 @@ Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-re
 
 ## Media
 
-  * The favicon icon image is from the open socurce project [Twemoji](https://twemoji.twitter.com/) and was obtained from [favicon.io](https://favicon.io/emoji-favicons/pool-8-ball/). It is licensed for use under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
-  * The Orion Nebula image, used as the background image, was obtained from [Pixbay](https://pixabay.com/photos/orion-nebula-emission-nebula-11107/) and was freely used under the [Pixbay license](https://pixabay.com/service/terms/). 
+  * The favicon icon image is from the open source project [Twemoji](https://twemoji.twitter.com/) and was obtained from [favicon.io](https://favicon.io/emoji-favicons/pool-8-ball/). It is licensed for use under [CC-BY 4.0](https://creativecommons.org/licenses/by/4.0/).
+  * The Orion Nebula image, used as the background image, was obtained from [Pixbay](https://pixabay.com/photos/orion-nebula-emission-nebula-11107/) and was freely used under the [Pixbay licence](https://pixabay.com/service/terms/). 
 
 ## Code
 
   * The CSS code for the shading around the Magic 8 Ball was adapted from the Coder's Block article ["Creating Glow Effects with CSS"](https://codersblock.com/blog/creating-glow-effects-with-css/).
   * The CSS code for the Magic 8 Ball animation was adapted from the Email on Acid article ["How to Build an Interactive Magic 8 Ball for Email"](https://www.emailonacid.com/blog/article/email-development/how-to-build-an-interactive-magic-8-ball-for-email/).
 
-Varoious online tutorials were consulted to help better understand the methodadology needed to create this site. These include the following:
+Various online tutorials were consulted to help better understand the methodology needed to create this site. These include the following:
   * [HTML, CSS, & Javascript: I Created A Magic 8 Ball](https://www.youtube.com/watch?v=SAbd3vn9m0s&ab_channel=SmartTechTip) by Smart Tech Tip.
   * [Magic Eight Ball](https://www.youtube.com/watch?v=1pw7D7GNLNM&ab_channel=CaryRiina) by Cary Riina.
   * [Build Magic 8 ball App | HTML | CSS | Javascript](https://www.youtube.com/watch?v=k3ZLSWQB9AU&ab_channel=AadeshKulkarni) by Aadesh Kulkarni.
