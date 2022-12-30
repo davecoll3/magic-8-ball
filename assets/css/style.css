@@ -248,7 +248,7 @@ MEDIA QUERIES PORTRAIT ORIENTATION
   }
 }
 
-@media (orientation: portrait) and (min-width: 330px) and (max-width:480px) {
+@media (orientation: portrait) and (min-width: 340px) and (max-width:480px) {
   /* Header */
   .heading h1 {
     font-size: 40px;
@@ -392,10 +392,11 @@ MEDIA QUERIES LANDSCAPE ORIENTATION
   /* Footer */
   .footer {
     font-size: 12px;
+    margin-top: 24px;
   }
 }
 
-@media (orientation: landscape) and (min-height: 330px) and (max-height:480px) {
+@media (orientation: landscape) and (min-height: 340px) and (max-height:480px) {
   /* Header */
   .heading h1 {
     font-size: 32px;
@@ -448,6 +449,7 @@ MEDIA QUERIES LANDSCAPE ORIENTATION
   /* Footer */
   .footer {
     font-size: 12px;
+    margin-top: 24px;
   }
 }
 
@@ -492,5 +494,6 @@ MEDIA QUERIES LANDSCAPE ORIENTATION
   /* Footer */
   .footer {
     font-size: 12px;
+    margin-top: 24px;
   }
 }

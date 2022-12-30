@@ -61,7 +61,7 @@
     * A valid question was submitted to trigger the 8 ball.
     * The 8 Ball animation was checked in both portrait and landscape orientations on mobile devices to ensure that it continued to function sufficently well.
       <details><summary>8 Ball Animation Testing</summary>
-        <img src="">
+        <img src="readme-files/images/testing-animation.gif">
       </details>
 
   * Result
@@ -87,7 +87,7 @@
     * Attempts to resubmit a question were made while the 8 Ball animation was running and answer was being displayed.
     * The "Shake!" button was checked for feedback upon hover over and click events, when used on a desktop device.
       <details><summary>User Input Testing</summary>
-        <img src="">
+        <img src="readme-files/images/testing-user-input.gif">
       </details>
 
   * Result
@@ -109,7 +109,7 @@
     * Multiple attempts were made to submit an empty text input field using both the 'enter' key and by clicking on the "Shake!" button.
     * Testing was carried out across various devices and screen widths to ensure that the error message appeared as expected and that the text remained horizontally aligned to the center of the page while maintaining good contrast with the background image.
       <details><summary>Error Message Testing</summary>
-        <img src="">
+        <img src="readme-files/images/testing-error-msg.gif">
       </details>
 
   * Result
@@ -130,7 +130,7 @@
     * It was verified that the footer text maintained good contrast with the background image.
     * Testing was carried out across various devices and screen widths to ensure that the footer text remained horizontally aligned to the center of the page.
       <details><summary>Footer Testing</summary>
-        <img src="">
+        <img src="readme-files/images/testing-footer.gif">
       </details>
 
   * Result
@@ -144,10 +144,8 @@
 ## Lighthouse
 [Lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to audit performance, accessibility, best practices and SEO across the website.
 
-  * [Lighthouse Report: Home Page](/readme-files/lighthouse/lighthouse-report-index.pdf)
-  * [Lighthouse Report: My Work Page](/readme-files/lighthouse/lighthouse-report-my-work.pdf)
-  * [Lighthouse Report: Gallery Page](/readme-files/lighthouse/lighthouse-report-gallery.pdf)
-  * [Lighthouse Report: Contact Me Page](/readme-files/lighthouse/lighthouse-report-contact-me.pdf)
+  * [Lighthouse Report: Desktop](readme-files/lighthouse/lighthouse-desktop.pdf)
+  * [Lighthouse Report: Mobile](readme-files/lighthouse/lighthouse-mobile.pdf)
 
 &nbsp;
 
@@ -158,114 +156,59 @@
 [LambdaTest](https://www.lambdatest.com/) was used to test the site across a number of browsers, including:
 
 ### Chrome: Windows
-  <details><summary>Home Page</summary>
-  <img src="readme-files/images/chrome_home.png" alt="Home page on Chrome browser">
+  <details><summary>The Magic 8 Ball on Chrome.</summary>
+  <img src="readme-files/images/lambdatest-chrome.png" alt="Website on Chrome browser">
   </details>
-  <details><summary>My Work Page</summary>
-  <img src="readme-files/images/chrome_work.png" alt="My Work page on Chrome browser">
-  </details>
-  <details><summary>Gallery Page</summary>
-  <img src="readme-files/images/chrome_gallery.png" alt="Gallery page on Chrome browser">
-  </details>
-  <details><summary>Contact Me Page</summary>
-  <img src="readme-files/images/chrome_contact.png" alt="Contact Me page on Chrome browser">
-  </details>  
   
   &nbsp;
 
   ### Chrome: Android
-  <details><summary>Home Page</summary>
-  <img src="readme-files/images/android_home.png" alt="Home page on Chrome (Android) browser">
-  </details>
-  <details><summary>My Work Page</summary>
-  <img src="readme-files/images/android_work.png" alt="My Work page on Chrome (Android) browser">
-  </details>
-  <details><summary>Gallery Page</summary>
-  <img src="readme-files/images/android_gallery.png" alt="Gallery page on Chrome (Android) browser">
-  </details>
-  <details><summary>Contact Me Page</summary>
-  <img src="readme-files/images/android_contact.png" alt="Contact Me page on Chrome (Android) browser">
+  <details><summary>The Magic 8 Ball on Chrome (Android).</summary>
+  <img src="readme-files/images/lambdatest-android.png" alt="Website on Chrome (Android) browser">
   </details>
 
   &nbsp;
 
   ### Safari: MacOS
-  <details><summary>Home Page</summary>
-  <img src="readme-files/images/safari_home.png" alt="Home page on Safari browser">
-  </details>
-  <details><summary>My Work Page</summary>
-  <img src="readme-files/images/safari_work.png" alt="My Work page on Safari browser">
-  </details>
-  <details><summary>Gallery Page</summary>
-  <img src="readme-files/images/safari_gallery.png" alt="Gallery page on Safari browser">
-  </details>
-  <details><summary>Contact Me Page</summary>
-  <img src="readme-files/images/safari_contact.png" alt="Contact Me page on Safari browser">
+  <details><summary>The Magic 8 Ball on Safari.</summary>
+  <img src="readme-files/images/lambdatest-safari.png" alt="Website on Safari browser">
   </details>
 
   &nbsp;
 
   ### Safari: iOS
-  <details><summary>Home Page</summary>
-  <img src="readme-files/images/ios_home.png" alt="Home page on Safari (iOS) browser">
-  </details>
-  <details><summary>My Work Page</summary>
-  <img src="readme-files/images/ios_work.png" alt="My Work page on Safari (iOS) browser">
-  </details>
-  <details><summary>Gallery Page</summary>
-  <img src="readme-files/images/ios_gallery.png" alt="Gallery page on Safari (iOS) browser">
-  </details>
-  <details><summary>Contact Me Page</summary>
-  <img src="readme-files/images/ios_contact.png" alt="Contact Me page on Safari (iOS) browser">
+  <details><summary>The Magic 8 Ball on Safari (iOS).</summary>
+  <img src="readme-files/images/lambdatest-ios.png" alt="Website on Safari (iOS) browser">
   </details>
 
   &nbsp;
 
   ### MS Edge: Windows
-  <details><summary>Home Page</summary>
-  <img src="readme-files/images/edge_home.png" alt="Home page on MS Edge browser">
-  </details>
-  <details><summary>My Work Page</summary>
-  <img src="readme-files/images/edge_work.png" alt="My Work page on MS Edge browser">
-  </details>
-  <details><summary>Gallery Page</summary>
-  <img src="readme-files/images/edge_gallery.png" alt="Gallery page on MS Edge browser">
-  </details>
-  <details><summary>Contact Me Page</summary>
-  <img src="readme-files/images/edge_contact.png" alt="Contact Me page on MS Edge browser">
+  <details><summary>The Magic 8 Ball on MS Edge.</summary>
+  <img src="readme-files/images/lambdatest-edge.png" alt="Website on MS Edge browser">
   </details>
 
   &nbsp;
 
   ### Firefox: Windows
-  <details><summary>Home Page</summary>
-  <img src="readme-files/images/moz_home.png" alt="Home page on Firefox browser">
-  </details>
-  <details><summary>My Work Page</summary>
-  <img src="readme-files/images/moz_work.png" alt="My Work page on Firefox browser">
-  </details>
-  <details><summary>Gallery Page</summary>
-  <img src="readme-files/images/moz_gallery.png" alt="Gallery page on Firefox browser">
-  </details>
-  <details><summary>Contact Me Page</summary>
-  <img src="readme-files/images/moz_contact.png" alt="Contact Me page on Firefox browser">
+  <details><summary>The Magic 8 Ball on Firefox.</summary>
+  <img src="readme-files/images/lambdatest-firefox.png" alt="Website on Firefox browser">
   </details>
 
   &nbsp;
 
   ### Opera: Windows
-  <details><summary>Home Page</summary>
-  <img src="readme-files/images/opera_home.png" alt="Home page on Opera browser">
+  <details><summary>The Magic 8 Ball on Opera.</summary>
+  <img src="readme-files/images/lambdatest-opera.png" alt="Website on Opera browser">
   </details>
-  <details><summary>My Work Page</summary>
-  <img src="readme-files/images/opera_work.png" alt="My Work page on Opera browser">
+
+  &nbsp;
+
+  ### Brave: Windows
+  <details><summary>The Magic 8 Ball on Brave.</summary>
+  <img src="readme-files/images/lambdatest-brave.png" alt="Website on Brave browser">
   </details>
-  <details><summary>Gallery Page</summary>
-  <img src="readme-files/images/opera_gallery.png" alt="Gallery page on Opera browser">
-  </details>
-  <details><summary>Contact Me Page</summary>
-  <img src="readme-files/images/opera_contact.png" alt="Contact Me page on Opera browser">
-  </details>
+
 
 &nbsp;
 
