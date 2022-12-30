@@ -66,7 +66,7 @@
 
   * Result
     * When a valid question was submitted, the 8 Ball animation began as expected, lasting 1 second.
-    * After the animation, an answer was displayed, at the centre of the 8 Ball, for 2 seconds.
+    * An answer was subsequently displayed, at the centre of the 8 Ball, for 2 seconds.
     * The 8 Ball then returned to its default state.
     * The 8 Ball animation functions well on mobile devices in both portrait and landscape orientation.
 
@@ -77,10 +77,10 @@
   * Expected
     * The user input should consist of a text input and a button element.
     * Placeholder text should be displayed, within the text input, prompting the user to submit a question.
-    * The "Shake!" button should provide feedback when the user hovers over it or clicks on it, when used on a desktop device..
+    * The "Shake!" button should provide feedback when the user hovers over it or clicks on it; on a desktop device..
     * It should be possible to submit a valid question by either an 'enter' key press or by clicking on the "Shake!" button.
     * Once a valid question has been submitted, it should not be possible to submit a subsequent question until after the 8 Ball animation, and displaying of the answer text, has ended.
-    * When the 8 Ball animation and displaying of the answer text have ended, the text input field should be cleared of the previous question.
+    * When the 8 Ball animation and subsequent displaying of the answer text have ended, the text input field should be cleared of the previous question.
 
   * Testing
     * A valid question was submitted using first the 'enter' key and subsequently by clicking on the "Shake!" button.
@@ -92,10 +92,10 @@
 
   * Result
     * Placeholder text is displayed, within the text input, prompting the user to submit a question.
-    * The "Shake!" button provides feedback when the user hovers over it or clicks on it, when used on a desktop device..
+    * The "Shake!" button provides feedback when the user hovers over it or clicks on it; on a desktop device..
     * A valid question can be submitted by either an 'enter' key press or by clicking on the "Shake!" button. 
     * When a valid question is submitted, it is not possible to submit a subsequent question until after the 8 Ball animation, and displaying of the answer text, has ended.
-    * When the 8 Ball animation and displaying of the answer text ends, the text input field is cleared of the previous question.
+    * When the 8 Ball animation and subsequent displaying of the answer text ends, the text input field is cleared of the previous question.
         
 &nbsp;
 
@@ -217,7 +217,7 @@
 ## Bugs
 
 ### Scrolling
-  During testing, it was noted that when on a mobile device, in landscape orientation, while there was content below the fold, it was not possible to scroll down to view it and it was only accessible with the use of the tab key. It was eventually discovered that an overflow: hidden (as below) property had been added to the body element which was causing this issue. Removing the overflow property resolved the issue.
+  During testing, it was noted that when on a mobile device, while in landscape orientation, while there was content below the fold, it was not possible to scroll down to view it and it was only accessible with the use of the tab key. It was eventually discovered that an overflow: hidden (as below) property had been added to the body element which was causing this issue. Removing the overflow property resolved the issue.
   
   ```
   body {
@@ -255,7 +255,7 @@ body {
   &nbsp;
 
 ### Footer
-  The placement of the footer element was initially controlled by the addition of the Bootstrap utility class of 'fixed-bottom' which worked well. However, during testing, it was discovered that when on a mobile device, in landscape mode, the footer was blocking content and would be better positioned if it were flushed to the bottom of the page. Having tried several different methods to obtain the desired positioning, it was finally achieved using flexbox which was already being implemented on the site. Namely, flex-grow: 1 was added to the main element and flex-grow: 0 to the footer element (as below). 
+  The placement of the footer element was initially controlled by the addition of the Bootstrap utility class of 'fixed-bottom' which worked well. However, during testing, it was discovered that when on a mobile device, while in landscape mode, the footer was blocking content and would be better positioned if it were flushed to the bottom of the page. Having tried several different methods to obtain the desired positioning, it was finally achieved using flexbox which was already being implemented on the site. Namely, flex-grow: 1 was added to the main element and flex-grow: 0 to the footer element (as below). 
 
   ```
   body {
@@ -293,7 +293,7 @@ body {
 &nbsp;
 
   ### 'Shake!' Button
-  When testing the game element it was discovered that, when a question was submitted by the user, it was possible to resubmit subsequent questions before the 8 Ball had completed its animation and displaying of the answer. This was due to the 'Shake!' button being continually active and was resolved by altering the JavaScript by adding "button.disabled = true;" to the validateQuestion function (as below). 
+  When testing the game element it was discovered that, when a question was submitted by the user, it was possible to resubmit subsequent questions before the 8 Ball had completed its animation and subsequently displaying of the answer. This was due to the 'Shake!' button being continually active and was resolved by altering the JavaScript by adding "button.disabled = true;" to the validateQuestion function (as below). 
 
   ```
   function validateQuestion() {

@@ -1,6 +1,6 @@
 # The Magic 8 Ball
 
-The Magic 8 Ball is used for fortune telling or seeking advice. This is a fun website where users can ask a question and receive a response that affirms or rejects their query; it can also provide a neutral response.
+The Magic 8 Ball is used for fortune telling or seeking advice. This is a fun website where users can ask the Magic 8 Ball a question and receive a response that affirms or rejects their query; it can also provide a neutral response.
 
 The primary technologies used to form the basis of this website are the coding languages HTML, CSS and JavaScript which were complemented by use of the Bootstrap framework.
 
@@ -55,7 +55,7 @@ Research for the creation of this site was carried out by searching for various 
 
 ## Owner Goals
 
-  * Create a short but fun advice/fortune telling game.
+  * Create a short and fun advice/fortune telling game.
   * To generate interest in their games.
   * Potentially generate enough traffic to attract advertisers.
 
@@ -101,11 +101,11 @@ Research for the creation of this site was carried out by searching for various 
 
 ### Color Scheme
 
-* Black and white colours were used on the Eight Ball as is traditional. White, black and grey text was used across the site to provide good contrast; adhering to the WCAG 2.1 contrast guidelines. Magenta, cyan, and white were used to help blend the Eight Ball into the background image. In keeping with this theme, various shades of purple were used on the "Shake!" button and on the back area of the Eight Ball itself to provide some shading and make it seem less two dimensional.
+* Black and white colours were used on the Eight Ball as is traditional. White, black and grey text was used across the site to provide good contrast; adhering to the WCAG 2.1 contrast guidelines. Magenta, cyan, and white were used to help blend the Eight Ball into the background image. In keeping with this theme, various shades of purple were used on the "Shake!" button and on the black area of the Eight Ball itself to provide some shading and make it seem less two dimensional.
 
 ### Fonts
 
-* The Google font of Nunito was chosen as it is a well balanced typeface with a slightly rounded edge which fits in with the overall look of the site, providing good definition without detracting from the imagery.
+* The Google font of Nunito was chosen as it is a well balanced typeface with a slightly rounded edge which fits in with the overall look of the site, providing good definition without detracting from the imagery. The Google font of Orbitron was chosen for the copyright text, in the footer, in order to differentiate the brand name (dc games) from the rest of the site. 
 
 ### Structure
 
@@ -140,13 +140,13 @@ Wireframes for mobile, tablet, and desktop can be found below:
 
 * 8 Ball
 
-  * The Eight Ball itself is in traditional black and white colors with shades of magenta, cyan, and white was used to help blend it into the background image. Some purple shading was added to the back area of the Eight Ball to provide some shading and make it seem less two dimensional.
+  * The Eight Ball itself is in traditional black and white colors with shades of magenta, cyan, and white used to help blend it into the background image. Some purple shading was added to the black area of the Eight Ball to provide some shading and make it seem less two dimensional.
 
     ![8 Ball](/readme-files/images/eight-ball.png)
 
 * 8 Ball Animation
 
-  * Once a valid question has been submitted by the user, a short 1 second animation is triggered which shakes the Eight Ball from side to side; as was traditionally done with the physical Eight Ball toy in order to obtain an answer to the users question.
+  * Once a valid question has been submitted by the user, a short 1 second animation is triggered which shakes the Eight Ball from side to side; as was traditionally done with the physical Eight Ball toy in order to obtain an answer to the user's question.
 
     ![8 Ball Animation](/readme-files/images/animation.gif)
 
@@ -158,7 +158,7 @@ Wireframes for mobile, tablet, and desktop can be found below:
 
 * Error Message
 
-  * Should a user fail to write a question, an error message is displayed underneath the button which prompts them to ask a question.
+  * Should a user fail to write a question, an error message is displayed, underneath the button, which prompts them to ask a question.
 
     ![Error Message](/readme-files/images/error-msg.png)
 
@@ -171,11 +171,9 @@ Wireframes for mobile, tablet, and desktop can be found below:
 
 ## Features to be Implemented in Future
 
-  * ????????
-  * ????????
-  * ????????
-  * ????????
-  * ????????
+  In the future a JavaScript function could be added to further check the validity of the question input by the user. This could, for example, check if the question contains a question mark or specific question words (who, where, what, etc.). This would require further instruction for the user to understand the requirements of a valid question. 
+
+  At present, this has not been implemented. For the sake of simplicity, and to negate any learning curve or the need for greater instruction, it was decided to only verify that the user is not submitting an empty string before triggering the animation and supplying an answer.
 
 &nbsp;
 

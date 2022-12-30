@@ -1,7 +1,7 @@
 /* ==========
 GOOGLE FONTS
 ========== */
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400;1,600;1,700;1,800&family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,600;0,700;0,800;1,400&family=Orbitron&display=swap');
 
 /* ==========
 GENERAL
@@ -109,7 +109,7 @@ HEADER
   border-radius: 50%;
   text-align: center;
   font-weight: 800;
-  font-size: 18px;
+  font-size: 20px;
   margin: 0;
 }
 
@@ -146,7 +146,7 @@ VALIDATION ERROR MESSAGE
 ========== */
 .error-message-text {
   color: #fff;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   margin: 8px;
 }
@@ -278,6 +278,11 @@ MEDIA QUERIES PORTRAIT ORIENTATION
     font-size: 16px;
   }
 
+  /* User Input */
+  .user-question {
+    width: 75%;
+  }
+
   /* Validation Error Message */
   .error-message-text {
     font-size: 16px;
@@ -320,6 +325,11 @@ MEDIA QUERIES PORTRAIT ORIENTATION
   .answer-text {
     width: 85px;
     font-size: 18px;
+  }
+
+  /* User Input */
+  .user-question {
+    width: 75%;
   }
 
   /* Validation Error Message */
